@@ -51,7 +51,8 @@ gulp.task('cachebust', ['build'], () => {
 
 //ftp deployment
 gulp.task('deploy', ['cleanremote'], () => {
-  let fsdeploy = gulp.src('dist/_site')
+  let globs = ['dist/_site/**'];
+  let fsdeploy = gulp.src(globs, {base: '.', buffer: false})
         .pipe(conn.dest('beta/cassielawfirm'));
     return fsdeploy;
 })
