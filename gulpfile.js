@@ -52,13 +52,13 @@ gulp.task('cachebust', ['build'], ()=>{
 //ftp deployment
 gulp.task('deploy', ['cleanremote'], ()=>{
   let fsdeploy = gulp.src('src/_site/**/*.*')
-  .pipe(conn.dest('cassielawfirm'));
+  .pipe(conn.dest('beta/'));
   return fsdeploy;
 })
 
 //clean remote folder on ftp server
 gulp.task('cleanremote', (cb) => {
-    return conn.rmdir('cassielawfirm', function(err) {
+    return conn.rmdir('beta/cassielawfirm', function(err) {
         cb();
     });
 });
