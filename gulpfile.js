@@ -12,24 +12,24 @@ const merge = require('merge-stream');
 
 let deployargs = minimist(process.argv.slice(2));
 let conn = ftp.create({
-  host: deployargs.host,
-  user: deployargs.user,
-  password: deployargs.password,
-  log: util.log
+    host: deployargs.host,
+    user: deployargs.user,
+    password: deployargs.password,
+    log: util.log
 });
 let timestamp = Math.round(Date.now() / 1000);
 
-gulp.task('default', ['cachebust','zip']);
+gulp.task('default', ['cachebust', 'zip']);
 
 gulp.task('clean', () => {
-  return del(['dist']);
+    return del(['dist']);
 });
 
 gulp.task('zip', ['build'], () => {
-  let fszip = gulp.src('dist/_site/**')
-  .pipe(zip(`v${timestamp}.zip`))
-  .pipe(gulp.dest('dist/_site/files'));
-  return fszip;
+    let fszip = gulp.src('dist/_site/**')
+        .pipe(zip(`v${timestamp}.zip`))
+        .pipe(gulp.dest('dist/_site/files'));
+    return fszip;
 });
 
 gulp.task('build', ['clean'], (cb) => {
@@ -42,23 +42,24 @@ gulp.task('build', ['clean'], (cb) => {
 });
 
 //add timestamp to static assets to bust cache
-gulp.task('cachebust', ['build'], ()=>{
-  let fscachebust = gulp.src(['dist/_site/**/*.html','dist/_site/**/*.md','dist/_site/**/*.markdown'])
-  .pipe(replace(/@@hash/g, timestamp))
-  .pipe(gulp.dest('dist/_site'))
-  return fscachebust;
+gulp.task('cachebust', ['build'], () => {
+    let fscachebust = gulp.src(['dist/_site/**/*.html', 'dist/_site/**/*.md', 'dist/_site/**/*.markdown'])
+        .pipe(replace(/@@hash/g, timestamp))
+        .pipe(gulp.dest('dist/_site'))
+    return fscachebust;
 });
 
 //ftp deployment
-gulp.task('deploy', ['cleanremote'], ()=>{
-  let fsdeploy = gulp.src('dist/_site/**/*.*')
-  .pipe(conn.dest('beta'));
-  return fsdeploy;
+gulp.task('deploy', ['cleanremote'], () => {
+  let deploysrc = ['dist/_site/**/*.*'];
+  let fsdeploy = gulp.src(deploysrc, {base: './beta'})
+        .pipe(conn.dest('cassielawfirm'));
+    return fsdeploy;
 })
 
 //clean remote folder on ftp server
 gulp.task('cleanremote', (cb) => {
-    return conn.rmdir('beta', function(err) {
+    return conn.rmdir('cassielawfirm', function(err) {
         cb();
     });
 });
