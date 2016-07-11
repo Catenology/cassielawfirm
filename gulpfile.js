@@ -22,19 +22,19 @@ let timestamp = Math.round(Date.now() / 1000);
 gulp.task('default', ['cachebust','zip']);
 
 gulp.task('clean', () => {
-  return del(['src/_site', 'dist']);
+  return del(['dist']);
 });
 
 gulp.task('zip', ['build'], () => {
-  let fszip = gulp.src('src/_site/**')
+  let fszip = gulp.src('dist/_site/**')
   .pipe(zip(`v${timestamp}.zip`))
-  .pipe(gulp.dest('dist'));
+  .pipe(gulp.dest('dist/_site/files'));
   return fszip;
 });
 
 gulp.task('build', ['clean'], (cb) => {
     //jekyll build the site
-    exec(['jekyll b --source src --destination src/_site'], function(err, stdout, stderr) {
+    exec(['jekyll b --source src --destination dist/_site'], function(err, stdout, stderr) {
         console.log(stdout);
         console.log(stderr);
         cb(err);
@@ -43,22 +43,22 @@ gulp.task('build', ['clean'], (cb) => {
 
 //add timestamp to static assets to bust cache
 gulp.task('cachebust', ['build'], ()=>{
-  let fscachebust = gulp.src(['src/_site/**/*.html','src/_site/**/*.md','src/_site/**/*.markdown'])
+  let fscachebust = gulp.src(['dist/_site/**/*.html','dist/_site/**/*.md','dist/_site/**/*.markdown'])
   .pipe(replace(/@@hash/g, timestamp))
-  .pipe(gulp.dest('src/_site'))
+  .pipe(gulp.dest('dist/_site'))
   return fscachebust;
 });
 
 //ftp deployment
 gulp.task('deploy', ['cleanremote'], ()=>{
-  let fsdeploy = gulp.src('src/_site/**/*.*')
-  .pipe(conn.dest('beta/cassielawfirm'));
+  let fsdeploy = gulp.src('dist/_site/**/*.*')
+  .pipe(conn.dest('beta'));
   return fsdeploy;
 })
 
 //clean remote folder on ftp server
 gulp.task('cleanremote', (cb) => {
-    return conn.rmdir('beta/cassielawfirm', function(err) {
+    return conn.rmdir('beta', function(err) {
         cb();
     });
 });
