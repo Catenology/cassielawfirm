@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+  - 2.2
+before_install:
+  - ruby -v
+  - gem install jekyll -v 3.1
+install:
+  - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
+  - npm install --only=dev
+script:
+  - gulp
+env:
+  global:
+  - TRAVIS_NODE_VERSION="0.12"
+  - TRAVIS_NODE_VERSION="4"
+after_success: gulp deploy --host $FTP_HOST  --user $FTP_USER --password $FTP_PASSWORD

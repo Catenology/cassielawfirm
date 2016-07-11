@@ -1,0 +1,25 @@
+{
+  "name": "cassielawfirm",
+  "version": "1.0.0",
+  "description": "law firm website",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Catenology/cassielawfirm.git"
+  },
+  "author": "Catenology",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Catenology/cassielawfirm/issues"
+  },
+  "homepage": "https://github.com/Catenology/cassielawfirm#readme"
+}
