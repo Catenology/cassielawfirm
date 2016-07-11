@@ -52,7 +52,7 @@ gulp.task('cachebust', ['build'], ()=>{
 //ftp deployment
 gulp.task('deploy', ['cleanremote'], ()=>{
   let fsdeploy = gulp.src('src/_site/**/*.*')
-  .pipe(conn.dest('beta/'));
+  .pipe(conn.dest('beta/cassielawfirm'));
   return fsdeploy;
 })
 
