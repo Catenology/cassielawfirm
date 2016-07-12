@@ -51,15 +51,15 @@ gulp.task('cachebust', ['build'], () => {
 
 //ftp deployment
 gulp.task('deploy', ['cleanremote'], () => {
-  let globs = ['dist/_site/**'];
-  let fsdeploy = gulp.src(globs, {base: '.', buffer: false})
-        .pipe(conn.dest('beta/cassielawfirm'));
+  let globs = ['dist/_site/**/*.*'];
+  let fsdeploy = gulp.src(globs, {buffer: false})
+        .pipe(conn.dest('cassielawfirm'));
     return fsdeploy;
 })
 
 //clean remote folder on ftp server
 gulp.task('cleanremote', (cb) => {
-    return conn.rmdir('beta/cassielawfirm', function(err) {
+    return conn.rmdir('cassielawfirm', function(err) {
         cb();
     });
 });
