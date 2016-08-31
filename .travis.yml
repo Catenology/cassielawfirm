@@ -11,6 +11,8 @@ install:
 - npm install --only=dev
 script:
 - gulp
+notifications:
+  slack: catenology:Y0jhL99PEcrHdk2U3NZerj4r
 env:
   global:
   - TRAVIS_NODE_VERSION="0.12"
