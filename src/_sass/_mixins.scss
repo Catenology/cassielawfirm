@@ -1,0 +1,54 @@
+//mixins
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin list-columns($count,
+$gap:0) {
+  -moz-column-count: $count;
+  -moz-column-gap: $gap;
+  -webkit-column-count: $count;
+  -webkit-column-gap: $gap;
+  column-count: $count;
+  column-gap: $gap;
+}
+
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: '';
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation: $animations;
+  -o-animation: $animations;
+  animation: $animations;
+}
+
+@mixin animation-delay($time: 3s) {
+  -webkit-animation-delay: $time;
+  -moz-animation-delay: $time;
+  animation-delay: $time;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}

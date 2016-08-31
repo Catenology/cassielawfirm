@@ -1,0 +1,141 @@
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 4px solid $color-brand;
+  height: 64px;
+  @include transition(all, ease, .5s);
+  &.scroll-move {
+    top: -64px;
+  }
+}
+
+.navbar > .container {
+  width: 100%;
+  padding: 0;
+}
+.navbar-brand {
+  position: relative;
+  height: 64px;
+  .logo {
+    position: absolute;
+    height: 32px;
+    top: $spacing-unit;
+    left: $spacing-unit;
+  }
+  .title {
+    font-size: 24px;
+    height: 64px;
+    line-height: 64px;
+    padding-left: 50px;
+  }
+}
+.navbar-hamburger-checkbox {
+  display: none;
+}
+
+.navbar-hamburger-icon {
+  font-size: 24px;
+  color: $color-brand;
+  display: block;
+  position: absolute;
+  top:0;
+  right: $spacing-unit;
+  width: 32px;
+  border-radius: 2px;
+  text-align: center;
+  cursor: pointer;
+  height: 64px;
+  line-height: 64px;
+  @include transition(color, ease, .3s);
+  &:hover,
+  &:focus,
+  &.active {
+    color: $color-accent;
+  }
+  @media screen and (min-width: $breakpoint-md) {
+    display: none;
+  }
+}
+
+.navbar-hamburger-checkbox {
+  &:checked {
+    ~ .navbar-menu {
+      max-height: 100vh;
+    }
+  }
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: $color-brand;
+  max-height: 0;
+  overflow: hidden;
+  @include transition(max-height,
+  1s,
+  ease);
+  position: absolute;
+  width: 100%;
+  top: 64px;
+  a {
+    width: 100%;
+    &,
+    &:visited {
+      color: #fff;
+    }
+  }
+  &>li {
+    text-align: center;
+    cursor: pointer;
+    height: 48px;
+    line-height: 48px;
+    &:hover,
+    &:focus,
+    &.active {
+      background-color: lighten($color-brand, 20%);
+      a {
+        color: $color-accent;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+  .navbar-brand,
+  .navbar-nav {
+    display: inline-block;
+  }
+  .navbar-nav {
+    float: right;
+    padding-right: $spacing-unit;
+  }
+  .navbar-menu {
+    max-height: none;
+    background-color: transparent;
+    position: relative;
+    top: initial;
+    line-height: 64px;
+    @include transition(none);
+    a {
+      &,
+      &:visited {
+        color: $color-brand;
+      }
+    }
+    &>li {
+      display: inline-block;
+      border: none;
+      &:not(first-child) {
+        padding-left: $spacing-unit-sm;
+      }
+      &:hover,
+      &:focus,
+      &.active {
+        background-color: #fff;
+      }
+    }
+  }
+}

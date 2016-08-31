@@ -1,0 +1,31 @@
+//career
+.job-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  p {
+    margin: 0;
+  }
+}
+.job-title {
+  font-size: 1.8em;
+}
+@media screen and (min-width: $breakpoint-md) {
+  .job-list {
+    text-align: left;
+  }
+  .job-item {
+    padding: $spacing-unit 0;
+  }
+  .job-title {
+    display: block;
+    clear: both;
+  }
+  .job-location, .job-date {
+    display: inline-block;
+  }
+  .job-date {
+    float: right;
+  }
+}

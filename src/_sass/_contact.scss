@@ -1,0 +1,30 @@
+.contact {
+  background-color: $color-brand;
+  color: #fff;
+  .input-wrapper {
+    position: relative;
+    padding: .5em 0;
+  }
+  label {
+    color: $color-brand;
+    position: absolute;
+    top: .8em;
+    left: .8em;
+  }
+  input,
+  textarea {
+    &:focus,
+    &:not(:placeholder-shown) {
+      & + label {
+        opacity: 0;
+      }
+    }
+  }
+  .btn.cta {
+    background-color: $color-accent;
+    &:hover,
+    &:focus {
+      background-color: lighten($color-accent, 10%);
+    }
+  }
+}

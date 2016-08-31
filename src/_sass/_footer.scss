@@ -1,0 +1,35 @@
+footer {
+  background-color: $color-accent;
+  color: #fff;
+  text-align: center;
+  .container {
+    &>* {
+      padding: $spacing-unit 0;
+    }
+  }
+  a {
+    &,
+    &:visited {
+      color: #fff;
+    }
+    &:hover,
+    &:focus {
+      color: $color-brand;
+    }
+  }
+}
+//footer
+.footer-link-list {
+  margin: 0;
+  &>li {
+    width: 100%;
+    display: block;
+    @media screen and (min-width: $breakpoint-md) {
+      width: auto;
+      display: inline-block;
+      &:not(first-child) {
+        padding-left: $spacing-unit;
+      }
+    }
+  }
+}

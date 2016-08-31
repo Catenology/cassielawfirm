@@ -1,0 +1,57 @@
+@include keyframes(fade-out) {
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+
+.carousel-fw {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  &>li {
+    height: $hero-height-xs;
+    @media screen and (min-width: $breakpoint-md) {
+      height: $hero-height-md;
+    }
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    z-index: 0;
+    opacity: 0;
+    // slide transition
+    @include animation(fade-out 9s infinite both);
+    // image 1: small
+    background-image: url(http://catfw.catenology.com/files/placeholders/architecture-1515484.jpg);
+    // image 1: large
+    @media screen and (min-width: $breakpoint-md) {
+      background-image: url(http://catfw.catenology.com/files/placeholders/architecture-1515484.jpg);
+    }
+    &:nth-child(2) {
+      // image 2: small
+      background-image: url(http://catfw.catenology.com/files/placeholders/tax-468440.jpg);
+      /*-- Animation delay: 3s --*/
+      @include animation-delay(3s);
+      // image 2: large
+      @media screen and (min-width: $breakpoint-md) {
+        background-image: url(http://catfw.catenology.com/files/placeholders/tax-468440.jpg);
+      }
+    }
+    &:nth-child(3) {
+      // image 3: small
+      background-image: url(http://catfw.catenology.com/files/placeholders/document-428331.jpg);
+      /*-- Animation delay: 6s --*/
+      @include animation-delay(6s);
+      // image 3: large
+      @media screen and (min-width: $breakpoint-md) {
+        background-image: url(http://catfw.catenology.com/files/placeholders/document-428331.jpg);
+      }
+    }
+  }
+}

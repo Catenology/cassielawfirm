@@ -1,0 +1,88 @@
+.photowall {
+  padding: 0;
+  margin: 0;
+  font-size: 0; //remove inline block space
+  background-color: $color-grey-light;
+}
+
+.photowall-item {
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    font-size: 12px;
+    background-color: fade-out(#000, .5);
+    color: #fff;
+    @include transition(min-height,
+    ease,
+    .3s);
+  }
+  &:hover,
+  &:focus,
+  &.active {
+    cursor: pointer;
+    &.empty {
+      cursor: auto;
+    }
+    figcaption {
+      // show name when screen is big
+      @media screen and (min-width: $breakpoint-md) {
+        height: auto;
+        padding: 2em 0;
+      }
+    }
+  }
+}
+
+.photowall-detail {
+  background-color: $color-brand;
+  color: #fff;
+  overflow: hidden;
+  height: 0;
+  &>* {
+    padding: 1em;
+  }
+  &.active {
+    height: 100%;
+  }
+}
+
+.photowall-detail-header {
+  .title {
+    font-size: .5em;
+    padding-right: $spacing-unit;
+  }
+  .name {
+    font-size: 1em;
+  }
+  .name-alt {
+    font-size: .5em;
+    padding-left: $spacing-unit;
+  }
+  @media screen and (min-width: $breakpoint-md) {
+    .breaker {
+      display: none;
+    }
+  }
+}
+.team-thumbnail {
+  padding: $spacing-unit-lg 0;
+}
+.team-branch {
+  padding: 0 $spacing-unit;
+  cursor: pointer;
+  &.active {
+    color: $color-accent;
+    text-decoration: underline;
+  }
+}
