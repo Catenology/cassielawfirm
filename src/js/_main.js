@@ -12,10 +12,8 @@ let main = () => {
                 trigger.addClass('active');
                 panel.addClass('active');
             } else {
-                if (collapse) {
-                    triggers.removeClass('active');
-                    panels.removeClass('active');
-                }
+              triggers.removeClass('active');
+              panels.removeClass('active');
             }
         });
     };
@@ -76,8 +74,8 @@ let main = () => {
         };
     };
 
-    detailPanel($('.photowall-item'), $('.photowall-detail'), true);
-    detailPanel($('.highlight-icon'), $('.service-list'), false);
+    detailPanel($('.photowall-item'), $('.photowall-detail'));
+    detailPanel($('.highlight-icon'), $('.service-list'));
     clickFilter($('.team-branch'), $('.photowall-item'), 'branch');
     smoothScroll();
 };

@@ -1,4 +1,4 @@
-.scroll-to-top {
+.go-to-top {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -14,8 +14,9 @@
   &:focus {
     color: $color-brand;
   }
-  i {
-    padding-right: $spacing-unit-sm;
+  .label {
+    display: none;
+    padding-left: $spacing-unit-sm;
   }
   @include transition(all, ease, .5s);
   &.hide {
@@ -23,4 +24,13 @@
     opacity: 0;
     overflow: hidden;
   }
+  @media screen and (min-width: $breakpoint-md) {
+    .label {
+      display: initial;
+    }
+  }
+}
+
+.page-content {
+  padding: $spacing-unit*6 $spacing-unit;
 }

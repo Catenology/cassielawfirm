@@ -28,29 +28,29 @@
     // slide transition
     @include animation(fade-out 9s infinite both);
     // image 1: small
-    background-image: url(http://catfw.catenology.com/files/placeholders/architecture-1515484.jpg);
+    background-image: url(../images/hero-1.jpg);
     // image 1: large
     @media screen and (min-width: $breakpoint-md) {
-      background-image: url(http://catfw.catenology.com/files/placeholders/architecture-1515484.jpg);
+      background-image: url(../images/hero-1.jpg);
     }
     &:nth-child(2) {
       // image 2: small
-      background-image: url(http://catfw.catenology.com/files/placeholders/tax-468440.jpg);
+      background-image: url(../images/hero-2.jpg);
       /*-- Animation delay: 3s --*/
       @include animation-delay(3s);
       // image 2: large
       @media screen and (min-width: $breakpoint-md) {
-        background-image: url(http://catfw.catenology.com/files/placeholders/tax-468440.jpg);
+        background-image: url(../images/hero-2.jpg);
       }
     }
     &:nth-child(3) {
       // image 3: small
-      background-image: url(http://catfw.catenology.com/files/placeholders/document-428331.jpg);
+      background-image: url(../images/hero-3.jpg);
       /*-- Animation delay: 6s --*/
       @include animation-delay(6s);
       // image 3: large
       @media screen and (min-width: $breakpoint-md) {
-        background-image: url(http://catfw.catenology.com/files/placeholders/document-428331.jpg);
+        background-image: url(../images/hero-3.jpg);
       }
     }
   }

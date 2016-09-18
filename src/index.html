@@ -3,14 +3,213 @@ layout: default
 ---
 <div id="top"></div>
 <div class="content-wrapper">
-  {% assign sections = site.pages | where:"type", "section" | sort: "weight" %}
-  {% for section in sections %}
-    <section class="{{ section.alias }}" id="{{ section.alias }}">
-      {{ section.content }}
+    <section class="about" id="about">
+        <ul class="carousel-fw">
+            <li>
+                <!--carousel slide holder tag-->
+            </li>
+            <li>
+                <!--carousel slide holder tag-->
+            </li>
+            <li>
+                <!--carousel slide holder tag-->
+            </li>
+        </ul>
+        <div class="container about-text">
+            <h1>About us</h1>
+            <p>
+                BridgeRoots is a comprehensive international law firm. We provide both domestic and cross-border services in the areas of General Corporate (including personnel and labor issues, such as work rules, salary rules, etc. ), M&A, corporate reorganization,
+                civil rehabilitation, business succession, liquidation and bankruptcy, debt collection, international trade, intellectual property (registration of patent, trade mark, IP infringement issues, etc.), real estate/construction, anti-monopoly
+                and anti- dumping, international dispute resolution, immigration and residence issue, etc., with cooperation of a number of business partners in both China and Korea.
+            </p>
+            <div class="center-block about-read-more">
+                <span class="label">Read more</span><i class="catif catif-chevron-down"></i>
+            </div>
+            <p class="about-more">Bridge Roots is established by Mr. Hashimoto Yoshifumi, a veteran lawyer with profound legal theory and long years of practical experience. After graduated from the Law School of Waseda University, Lawyer Hashimoto joined Takai Nobuo Law Firm
+                and became the chief representative lawyer of its Shanghai Office in 2004. During his career in China, Lawyer Hashimoto had a wide communication with and built a deep connection with businessmen, legal experts such as university professors,
+                consulates and organizations in Shanghai and from Japan or Korea, what have made a great contribution to his future career. In 2007, Lawyer Hashimoto founded Bridge Roots in his hometown Fukuoka and extended to Tokyo, Nagoya and Shanghai
+                in later following years, with the dream of bridging Asian countries as Japan, China and Korea. Since Bridge Roots focuses on team building and personnel training, we have constructed a team with professional skills, efficient coordination
+                and service spirit in the past years. Each lawyer has his/her own areas of expertise and available languages, such as Japanese, English, Chinese, Korean, at the same time we also have an internal coordination mechanism and personnel assignment
+                which make sure our clients are able to get more professional legal service to realize the maximum of the interests.</p>
+            <div class="about-branchs">
+                {% for branch in site.branchs %}
+                <a class="about-branch center-block" href="{{ site.baseurl | site.url }}/{{ branch.url }}">
+                {{ branch.name }} <br>
+                {{ branch.tel }} <br>
+                {{ branch.hours }}
+            </a> {% endfor %}
+            </div>
+        </div>
     </section>
-  {% endfor %}
-</div>
-<a href="#top" class="scroll-to-top">
-  <i class="catif catif-chevron-up"></i>
-  <span>Scroll to top</span>
-</a>
+    <section class="services" id="services">
+        <div class="container">
+            <h1>Services</h1>
+            <div class="highlight">
+                {% for service in site.services | sort: "weight" %}
+                <figure class="highlight-item">
+                  {% if forloop.first %}
+                    <div data-detail="service_detail_{{ service.alias }}" class="highlight-icon active">
+                  {% else %}
+                    <div data-detail="service_detail_{{ service.alias }}" class="highlight-icon">
+                  {% endif %}
+                        <i class="catif catif-logo-simple"></i>
+                    </div>
+                    <figcaption>{{ service.name }}</figcaption>
+                </figure>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="service-detail">
+            <div class="container">
+                <!-- <div id="service_detail_01" class="service-list center-block active">
+              <div class="service-item"><a href>Sastasha Seagrot</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Tam-Tara Deepcroft</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Copperbell Mines</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Halatali</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Thousand Maws of Toto-Rak</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Haukke Manor</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Brayflox's Longstop</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>The Sunked Temple of Qarn</a></div>
+              <div class="service-item empty"></div>
+            </div>
+            <div id="service_detail_02" class="service-list center-block">
+              <div class="service-item"><a href>Leather Wristguards</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Leather Culttes</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Shark Oil</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Book of Mythril</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Diamond Earrings</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Forgemaster's Goggles</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Sky Pirate's Mask of Striking</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Aurum Regis Ingot</a></div>
+              <div class="service-item empty"></div>
+            </div>
+            <div id="service_detail_03" class="service-list center-block">
+              <div class="service-item"><a href>Merlthor Goby</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Wahoo</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Coerthan Tea Leaves</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Chives</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Cow Bitter</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Honey Lemon</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Adamantite Ore</a></div>
+              <div class="service-item empty"></div>
+              <div class="service-item"><a href>Raw Chrysolite</a></div>
+              <div class="service-item empty"></div>
+            </div> -->
+                {% for service in site.services | sort: "weight" %}
+                {% if forloop.first %}
+                  <div id="service_detail_{{ service.alias }}" class="service-list center-block active">
+                {% else %}
+                  <div id="service_detail_{{ service.alias }}" class="service-list center-block">
+                {% endif %}
+                {% for item in service.items %}
+                  <div class="service-item">
+                      <a href title="{{ item.description }}">{{ item.name }}</a>
+                  </div>
+                        <div class="service-item empty">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+    </section>
+    <section class="team" id="team">
+        <div class="container">
+            <h1>Team</h1>
+            <div class="team-filter text-center">
+                <a title="Show all team members" class="team-branch active" data-branch="all">All</a>
+                <a title="Show team members of Fukuoka office" class="team-branch" data-branch="fukuoka">Fukuoka (HQ)</a>
+                <a title="Show team members of Tokyo office" class="team-branch" data-branch="tokyo">Tokyo</a>
+                <a title="Show team members of Nagoya office" class="team-branch" data-branch="nagoya">Nagoya</a>
+                <a title="Show team members of Shanghai office" class="team-branch" data-branch="shanghai">Shanghai</a>
+                <a title="Show team members of Hakata office" class="team-branch" data-branch="hakata">Hakata</a>
+            </div>
+            <div class="team-thumbnail">
+                <div class="photowall text-center">
+                    {% for member in site.members %}
+                    <figure data-branch="{{ member.branch }}" class="photowall-item">
+                        <a href="{{ site.baseurl | prepend: site.url }}/{{ member.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ member.image }}-sm.jpg" alt="{{ member.firstname }} {{ member.lastname }}" class="img-responsive" /></a>
+                        <figcaption>{{ member.firstname }} {{ member.lastname }}</figcaption>
+                    </figure>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="team-join text-center">
+                <h1>Want to be part of the team?</h1>
+                <a href>> See open positions</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <form class="form">
+                <div class="row">
+                    <div class="six columns">
+                        <div class="row">
+                            <div class="twelve columns input-wrapper">
+                                <input id="txtName" name="Name" type="text" placeholder=" " />
+                                <label for="txtName">Name</label>
+                            </div>
+                            <div class="twelve columns input-wrapper">
+                                <input id="txtEmail" name="Email" type="text" placeholder=" " />
+                                <label for="txtEmail">Email</label>
+                            </div>
+                            <div class="twelve columns input-wrapper">
+                                <input id="txtAddress" name="Address" type="text" placeholder=" " />
+                                <label for="txtAddress">Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="six columns input-wrapper">
+                                <input id="txtZipcode" name="Zipcode" type="text" placeholder=" " />
+                                <label for="txtZipcode">Zipcode</label>
+                            </div>
+                            <div class="six columns input-wrapper">
+                                <input id="txtState" name="State" type="text" placeholder=" " />
+                                <label for="txtState">State</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="twelve columns input-wrapper">
+                                <input id="txtCompany" name="Company" type="text" placeholder=" " />
+                                <label for="txtCompany">Company Name (optional)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="six columns">
+                        <div class="input-wrapper">
+                            <textarea id="txtMessage" name="Message" placeholder=" "></textarea>
+                            <label for="txtMessage">Message</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="three columns offset-by-nine input-wrapper">
+                        <input type="submit" name="Send" class="btn btn-default cta" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    </div>

@@ -9,9 +9,9 @@
   padding: 0;
   margin: 0;
   width: 20%;
+  max-height: 200px;
   clear: both;
   display: inline-block;
-  overflow: hidden;
   position: relative;
   figcaption {
     position: absolute;
@@ -38,51 +38,28 @@
       // show name when screen is big
       @media screen and (min-width: $breakpoint-md) {
         height: auto;
-        padding: 2em 0;
+        padding: 1em 0;
       }
     }
   }
 }
-
 .photowall-detail {
-  background-color: $color-brand;
   color: #fff;
-  overflow: hidden;
-  height: 0;
-  &>* {
-    padding: 1em;
-  }
+  // display: none;
+  font-size: initial;
+  text-align: left;
   &.active {
-    height: 100%;
+    display: block;
   }
 }
-
-.photowall-detail-header {
-  .title {
-    font-size: .5em;
-    padding-right: $spacing-unit;
-  }
-  .name {
-    font-size: 1em;
-  }
-  .name-alt {
-    font-size: .5em;
-    padding-left: $spacing-unit;
-  }
-  @media screen and (min-width: $breakpoint-md) {
-    .breaker {
-      display: none;
-    }
-  }
-}
-.team-thumbnail {
-  padding: $spacing-unit-lg 0;
-}
-.team-branch {
-  padding: 0 $spacing-unit;
+.close-button {
+  display: block;
+  position: fixed;
+  top: $spacing-unit-xxl;
+  right: $spacing-unit;
+  color: $color-brand;
+  font-size: 28px;
+  z-index: 1000;
+  padding:0;
   cursor: pointer;
-  &.active {
-    color: $color-accent;
-    text-decoration: underline;
-  }
 }

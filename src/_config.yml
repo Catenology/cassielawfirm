@@ -9,9 +9,16 @@
 title: Bridge Roots
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-
 baseurl: "/cassielawfirm" # the subpath of your site, e.g. /blog
 url: "http://beta.catenology.com" # the base hostname & protocol for your site
+# url: "http://127.0.0.1:4000" # test use
+collections:
+  services:
+    output: false
+  members:
+      output: true
+  branchs:
+      output: true
 
 # Build settings
 markdown: kramdown

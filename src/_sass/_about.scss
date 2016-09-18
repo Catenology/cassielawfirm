@@ -2,9 +2,14 @@
 .about {
   width: 100%;
   margin: 0 auto;
-  height: $hero-height-xs;
+  .carousel-fw {
+    display: none;
+  }
   @media screen and (min-width: $breakpoint-md) {
     height: $hero-height-md;
+    .carousel-fw {
+      display:block;
+    }
   }
   position: relative;
   background-color: $color-brand;
@@ -16,7 +21,6 @@
     top: 0;
     left: 0;
     // same height as parent
-    height: $hero-height-xs;
     @media screen and (min-width: $breakpoint-md) {
       height: $hero-height-md;
     }
@@ -29,17 +33,52 @@
 }
 
 .about-text {
-  z-index: 1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 100px;
+  padding-top: $spacing-unit-xl;
   @media screen and (min-width: $breakpoint-md) {
-    bottom: 160px;
+    bottom: $spacing-unit-xl;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 }
-.about-office {
-  h2 {
-    font-size: 2em;
+.about-branchs {
+  // display: none;
+  //remove spaceing for inline-block
+  font-size: 0;
+}
+.about-branch {
+  background-color: fade-out($color-accent, .3);
+  padding: 1em;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  //reset font-size
+  font-size: initial;
+  @media screen and (min-width: $breakpoint-md) {
+    width: 33%;
   }
+  &, &:visited, &:hover {
+    color: #fff;
+  }
+  &:hover, &:focus {
+    background-color: fade-out($color-brand, .5);
+  }
+}
+
+.about-read-more {
+  text-align: center;
+  cursor: pointer;
+  padding: $spacing-unit-sm;
+  border: 1px solid #fff;
+  display: none;
+  i {
+    padding-left: $spacing-unit-sm;
+  }
+  @media screen and (min-width:$breakpoint-md) {
+    width: 240px;
+  }
+}
+.about-more {
+  display: none;
 }

@@ -1,17 +1,17 @@
 <nav class="navbar">
   <div class="container">
-      <a href="#top" class="navbar-brand" title="Bridge Roots">
-        <img class="logo" src="images/brlogo.svg" alt="Bridge Roots logo" />
+      <a href="{{ site.baseurl | prepend: site.url }}/#top" class="navbar-brand" title="Bridge Roots">
+        <img class="logo" src="{{ site.baseurl | prepend: site.url }}/images/brlogo.svg" alt="Bridge Roots logo" />
         <span class="title">BRIDGE ROOTS</span>
       </a>
     <div class="navbar-nav">
       <input id="navbarHamburger" type="checkbox" class="navbar-hamburger-checkbox" />
       <label for="navbarHamburger" class="navbar-hamburger-icon"><i class="catif catif-hamburger icon"></i></label>
       <ul class="navbar-menu">
-        <li><a href="#about">Who are we</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/#about">Who are we</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/#services">Services</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/#team">Team</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/#contact">Contact</a></li>
       </ul>
     </div>
   </div>

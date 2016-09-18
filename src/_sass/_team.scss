@@ -1,0 +1,11 @@
+.team-thumbnail {
+  padding: $spacing-unit-lg 0;
+}
+.team-branch {
+  padding: 0 $spacing-unit;
+  cursor: pointer;
+  &.active {
+    color: $color-accent;
+    text-decoration: underline;
+  }
+}

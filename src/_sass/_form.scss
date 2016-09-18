@@ -2,15 +2,18 @@ input,
 textarea {
   outline: none;
   border: 2px solid transparent;
-  padding: 1em;
   width: 100%;
 }
 
 input {
-  height: 3em;
+  height: 2em;
+  &[type="submit"] {
+    padding: $spacing-unit;
+    height: auto;
+  }
 }
 
 textarea {
-  min-height: 20.5em;
   resize: vertical;
+  height: 16em;
 }

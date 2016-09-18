@@ -13,6 +13,7 @@ const cleancss = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
+const download = require('gulp-download');
 
 let deployargs = minimist(process.argv.slice(2));
 let conn = ftp.create({
@@ -26,7 +27,7 @@ let timestamp = Math.round(Date.now() / 1000);
 gulp.task('default', ['cachebust']);
 
 gulp.task('clean', () => {
-    return del(['dist']);
+    return del(['dist','_site','src/_site','src/css/_vendor/**','src/css/fonts/catif.*','src/css/vendor.min.css','src/js/_vendor/**','src/js/vendor.min.js']);
 });
 
 gulp.task('zip', ['build'], () => {
@@ -70,8 +71,29 @@ gulp.task('cleanremote', (cb) => {
     });
 });
 
+//download vendor files
+gulp.task('download', ['clean'], () => {
+    //catfw
+    let catfwcss = download('http://catfw.catenology.com/files/catfw.min.css')
+        .pipe(gulp.dest('src/css/_vendor/'));
+
+    let catfwfonts = download(['http://catfw.catenology.com/files/fonts/catif.ttf', 'http://catfw.catenology.com/files/fonts/catif.woff', 'http://catfw.catenology.com/files/fonts/catif.eot', 'http://catfw.catenology.com/files/fonts/catif.svg'])
+        .pipe(gulp.dest('src/css/fonts'));
+
+    let catfwjs = download('http://catfw.catenology.com/files/catfw.min.js')
+        .pipe(gulp.dest('src/js/_vendor/'));
+
+    //jquery
+    let jquery = download('https://code.jquery.com/jquery-3.1.0.min.js')
+        .pipe(gulp.dest('src/js/_vendor/'));
+    let svg4everybody = download('https://raw.githubusercontent.com/jonathantneal/svg4everybody/master/dist/svg4everybody.min.js')
+        .pipe(gulp.dest('src/js/_vendor/'));
+
+    return merge(catfwcss, catfwjs, jquery, svg4everybody);
+});
+
 //compile stylesheet
-gulp.task('styles', ['clean'], () => {
+gulp.task('styles', ['download'], () => {
   let vendor = gulp.src(['src/css/_vendor/*.css'])
   .pipe(cleancss())
   .pipe(concat('vendor.min.css'))
