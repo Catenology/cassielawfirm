@@ -5,6 +5,7 @@ const util = require('gulp-util');
 const zip = require('gulp-zip');
 const ftp = require('vinyl-ftp');
 const minimist = require('minimist');
+const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
 const exec = require('child_process').exec;
 const replace = require('gulp-replace');
@@ -71,6 +72,14 @@ gulp.task('cleanremote', (cb) => {
     });
 });
 
+//compress images
+gulp.task('imagemin', () => {
+  return gulp.src(['src/images/**/*.{png,svg,jpeg,jpg}'])
+  .pipe(imagemin({
+    verbose: true
+  }))
+  .pipe(gulp.dest('images'));
+});
 //download vendor files
 gulp.task('download', ['clean'], () => {
     //catfw

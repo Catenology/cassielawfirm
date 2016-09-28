@@ -23,7 +23,7 @@ layout: default
       </div>
     </div>
   </article>
-  {% assign relatedmembers = site.members | where: "branch", page.branch %}
+  {% assign relatedmembers = site.members | where: "branch", page.branch | sort: "weight" %}
   {% if relatedmembers.size > 1 %}
   <hr>
   <h4>Other attorneys at

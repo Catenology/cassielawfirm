@@ -2,6 +2,7 @@
 layout: branch
 lang: en
 name: "Hakata"
+weight: 2
 chief: "Takenori Lee"
 tel: "092-409-8984"
 fax: "092-409-8985"

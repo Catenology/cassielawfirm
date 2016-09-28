@@ -2,6 +2,7 @@
 layout: branch
 lang: en
 name: "Fukuoka"
+weight: 1
 chief: "Rie Akiyama"
 tel: "+81-92-738-2505"
 fax: "+81-92-738-0169"

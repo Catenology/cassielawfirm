@@ -32,7 +32,8 @@ layout: default
                 and service spirit in the past years. Each lawyer has his/her own areas of expertise and available languages, such as Japanese, English, Chinese, Korean, at the same time we also have an internal coordination mechanism and personnel assignment
                 which make sure our clients are able to get more professional legal service to realize the maximum of the interests.</p>
             <div class="about-branchs">
-                {% for branch in site.branchs %}
+              {% assign branchs = site.branchs | sort: "weight" %}
+                {% for branch in branchs %}
                 <a class="about-branch center-block" href="{{ site.baseurl | site.url }}/{{ branch.url }}">
                 {{ branch.name }} <br>
                 {{ branch.tel }}
