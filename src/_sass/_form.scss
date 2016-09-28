@@ -6,7 +6,6 @@ textarea {
 }
 
 input {
-  height: 2em;
   &[type="submit"] {
     padding: $spacing-unit;
     height: auto;
@@ -15,5 +14,4 @@ input {
 
 textarea {
   resize: vertical;
-  height: 16em;
 }

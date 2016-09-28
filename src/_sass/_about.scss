@@ -49,20 +49,20 @@
 }
 .about-branch {
   background-color: fade-out($color-accent, .3);
-  padding: 1em;
+  padding: .5em;
   text-align: center;
   display: inline-block;
   width: 100%;
   //reset font-size
   font-size: initial;
   @media screen and (min-width: $breakpoint-md) {
-    width: 33%;
+    width: 20%;
   }
   &, &:visited, &:hover {
     color: #fff;
   }
   &:hover, &:focus {
-    background-color: fade-out($color-brand, .5);
+    background-color: $color-accent;
   }
 }
 

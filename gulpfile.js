@@ -27,7 +27,7 @@ let timestamp = Math.round(Date.now() / 1000);
 gulp.task('default', ['cachebust']);
 
 gulp.task('clean', () => {
-    return del(['dist','_site','src/_site','src/css/_vendor/**','src/css/fonts/catif.*','src/css/vendor.min.css','src/js/_vendor/**','src/js/vendor.min.js']);
+    return del(['dist','_site','src/_site','src/css/_vendor/**/catfw.*','src/css/fonts/**/catif.*','src/css/vendor.min.css','src/js/_vendor/**','src/js/vendor.min.js']);
 });
 
 gulp.task('zip', ['build'], () => {

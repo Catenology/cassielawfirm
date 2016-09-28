@@ -3,22 +3,25 @@
   color: #fff;
   .input-wrapper {
     position: relative;
-    padding: .5em 0;
   }
   label {
     color: $color-brand;
     position: absolute;
-    top: .8em;
-    left: .8em;
+    top: 1em;
+    left: 1em;
   }
   input,
   textarea {
+    overflow: hidden;
     &:focus,
     &:not(:placeholder-shown) {
       & + label {
         opacity: 0;
       }
     }
+  }
+  textarea {
+    height: 23.5em;
   }
   .btn.cta {
     background-color: $color-accent;

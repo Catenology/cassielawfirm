@@ -4,6 +4,7 @@ title: "Practice Areas regarding personals"
 name: "Personals"
 alias: "psnl"
 weight: 3
+icon: "fa fa-user"
 items:
   - name: "Labor Issues"
     description: "Labor issues relating to unfair dismissal, overtime or salary unpaid, etc."

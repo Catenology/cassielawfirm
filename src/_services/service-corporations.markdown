@@ -4,6 +4,7 @@ title: "Practice Areas regarding Corporations"
 name: "Corporations"
 alias: "corp"
 weight: 2
+icon: "fa fa-group"
 items:
   - name: "Consulting Attorneys"
     description: "Legal consulting, making or reviewing contracts, etc."

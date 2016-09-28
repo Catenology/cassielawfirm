@@ -14,6 +14,7 @@ language:
   - Korean
   - Japanese
 image: "team-hakata-lee"
+weight: 15 #this is for sorting order
 ---
 
 ### Work and Education

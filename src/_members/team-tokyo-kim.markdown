@@ -13,6 +13,7 @@ association: "Tokyo Bar Association"
 language:
   - Japanese
 image: "team-tokyo-kim"
+weight: 8 #this is for sorting order
 ---
 
 ### Work and Education

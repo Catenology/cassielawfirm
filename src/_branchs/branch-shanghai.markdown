@@ -1,7 +1,7 @@
 ---
 layout: branch
 lang: en
-name: "Shanghai Office"
+name: "Shanghai"
 tel: "+86-21-52406930"
 fax: "+86-21-52406950"
 address:

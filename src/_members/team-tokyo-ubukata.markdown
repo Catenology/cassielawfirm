@@ -13,6 +13,7 @@ association: "Daiichi Tokyo Bar Association"
 language:
   - Japanese
 image: "team-tokyo-ubukata"
+weight: 7 #this is for sorting order
 ---
 
 ### Work and Education

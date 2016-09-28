@@ -13,6 +13,7 @@ association: "Tokyo Bar Association"
 language:
   - Japanese
 image: "team-tokyo-kouyama"
+weight: 9 #this is for sorting order
 ---
 
 ### Work and Education

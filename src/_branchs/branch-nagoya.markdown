@@ -1,7 +1,7 @@
 ---
 layout: branch
 lang: en
-name: "Nagoya Office"
+name: "Nagoya"
 chief: "Tomohiro Matsukawa"
 tel: "052-232-2505"
 fax: "052-232-2556"

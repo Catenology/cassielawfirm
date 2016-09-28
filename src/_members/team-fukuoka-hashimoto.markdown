@@ -13,6 +13,7 @@ association: "Tokyo Bar Association"
 language:
   - Japanese
 image: "team-fukuoka-hashimoto"
+weight: 1 #this is for sorting order
 ---
 
 ### About

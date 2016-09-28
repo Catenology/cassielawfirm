@@ -15,6 +15,7 @@ language:
  - Japanese
  - English
 image: "team-fukuoka-gen"
+weight: 3 #this is for sorting order
 ---
 
 ### Work and Education

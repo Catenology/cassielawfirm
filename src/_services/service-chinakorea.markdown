@@ -4,6 +4,7 @@ title: "Practice Areas regarding China & Korea"
 name: "China & Korea"
 alias: "chkr"
 weight: 1
+icon: "fa fa-map"
 items:
   - name: "M&A"
     description: "Consulting, Due Diligence, Documentation and Business Negotiation, etc. relating to company mergers and acquisitions between Japanese and Chinese companies or between Japanese and Korea companies or between Japanese companies located in China or Korea."

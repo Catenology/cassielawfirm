@@ -13,6 +13,7 @@ association: "Aichi Bar Association"
 language:
   - Japanese
 image: "team-nagoya-nakatsuji"
+weight: 14 #this is for sorting order
 ---
 
 ### About

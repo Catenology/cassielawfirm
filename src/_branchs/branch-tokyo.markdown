@@ -1,7 +1,7 @@
 ---
 layout: branch
 lang: en
-name: "Tokyo Office"
+name: "Tokyo"
 chief: "Fumiki Takahashi"
 tel: "+81-3-5368-1233"
 fax: "+81-3-5368-1255"

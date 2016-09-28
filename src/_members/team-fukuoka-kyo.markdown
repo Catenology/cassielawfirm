@@ -15,6 +15,7 @@ language:
   - Japanese
   - English
 image: "team-fukuoka-kyo"
+weight: 4 #this is for sorting order
 ---
 
 

@@ -13,6 +13,7 @@ language:
   - Chinese
   - Japanese
 image: "team-tokyo-chen"
+weight: 10 #this is for sorting order
 ---
 
 ### Work and Education

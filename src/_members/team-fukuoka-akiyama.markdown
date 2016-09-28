@@ -13,6 +13,7 @@ association: "Fukuoka Bar Association"
 language:
   - Japanese
 image: "team-fukuoka-akiyama"
+weight: 2 #this is for sorting order
 ---
 
 ### About

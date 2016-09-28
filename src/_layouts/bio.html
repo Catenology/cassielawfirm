@@ -15,10 +15,10 @@ layout: default
     <h1>{{ page.firstname | capitalize }} {{ page.lastname | capitalize }}</h1>
     <p>{{ page.title }}</p>
     <div class="row">
-      <div class="ten columns">
+      <div class="nine columns">
         {{ content }}
       </div>
-      <div class="two columns">
+      <div class="three columns">
         <img src="{{ site.baseurl | prepend: site.url }}/images/{{ page.image }}.jpg" class="img-responsive" alt="{{ page.firstname }} {{ page.lastname }}" />
       </div>
     </div>
