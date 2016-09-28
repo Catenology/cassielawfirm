@@ -2,6 +2,7 @@
 layout: branch
 lang: en
 name: "Nagoya"
+alias: "nagoya"
 weight: 3
 chief: "Tomohiro Matsukawa"
 tel: "052-232-2505"

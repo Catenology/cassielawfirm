@@ -85,11 +85,15 @@ layout: default
             <h1>Team</h1>
             <div class="team-filter text-center">
                 <a title="Show all team members" class="team-branch active" data-branch="all">All</a>
-                <a title="Show team members of Fukuoka office" class="team-branch" data-branch="fukuoka">Fukuoka (HQ)</a>
+                <!-- <a title="Show team members of Fukuoka office" class="team-branch" data-branch="fukuoka">Fukuoka (HQ)</a>
                 <a title="Show team members of Tokyo office" class="team-branch" data-branch="tokyo">Tokyo</a>
                 <a title="Show team members of Nagoya office" class="team-branch" data-branch="nagoya">Nagoya</a>
                 <a title="Show team members of Shanghai office" class="team-branch" data-branch="shanghai">Shanghai</a>
-                <a title="Show team members of Hakata office" class="team-branch" data-branch="hakata">Hakata</a>
+                <a title="Show team members of Hakata office" class="team-branch" data-branch="hakata">Hakata</a> -->
+                {% assign branchs = site.branchs | sort: "weight" %}
+                {% for branch in branchs %}
+                <a title="Show team members of {{ branch.name }} office" class="team-branch" data-branch="{{ branch.alias }}">{{ branch.name }}</a>
+                {% endfor %}
             </div>
             <div class="team-thumbnail">
                 <div class="photowall text-center">

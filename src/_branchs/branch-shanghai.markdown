@@ -2,7 +2,8 @@
 layout: branch
 lang: en
 name: "Shanghai"
-weight: 5
+alias: "shanghai"
+weight: 4
 tel: "+86-21-52406930"
 fax: "+86-21-52406950"
 address:
