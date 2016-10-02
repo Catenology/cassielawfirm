@@ -34,10 +34,8 @@ layout: default
             <div class="about-branchs">
               {% assign branchs = site.branchs | sort: "weight" %}
                 {% for branch in branchs %}
-                <a class="about-branch center-block" href="{{ site.baseurl | site.url }}/{{ branch.url }}">
-                {{ branch.name }} <br>
-                {{ branch.tel }}
-            </a> {% endfor %}
+                <a class="about-branch center-block" href="{{ site.baseurl | prepend: site.url }}/{{ branch.url }}">{{ branch.name }} <br>{{ branch.tel }}</a>
+                {% endfor %}
             </div>
         </div>
     </section>
@@ -62,7 +60,8 @@ layout: default
         </div>
         <div class="service-detail">
             <div class="container">
-                {% for service in site.services | sort: "weight" %}
+              {% assign services = site.services | sort: "weight" %}
+                {% for service in services %}
                 {% if forloop.first %}
                   <div id="service_detail_{{ service.alias }}" class="service-list center-block active">
                 {% else %}
@@ -85,11 +84,6 @@ layout: default
             <h1>Team</h1>
             <div class="team-filter text-center">
                 <a title="Show all team members" class="team-branch active" data-branch="all">All</a>
-                <!-- <a title="Show team members of Fukuoka office" class="team-branch" data-branch="fukuoka">Fukuoka (HQ)</a>
-                <a title="Show team members of Tokyo office" class="team-branch" data-branch="tokyo">Tokyo</a>
-                <a title="Show team members of Nagoya office" class="team-branch" data-branch="nagoya">Nagoya</a>
-                <a title="Show team members of Shanghai office" class="team-branch" data-branch="shanghai">Shanghai</a>
-                <a title="Show team members of Hakata office" class="team-branch" data-branch="hakata">Hakata</a> -->
                 {% assign branchs = site.branchs | sort: "weight" %}
                 {% for branch in branchs %}
                 <a title="Show team members of {{ branch.name }} office" class="team-branch" data-branch="{{ branch.alias }}">{{ branch.name }}</a>
@@ -108,7 +102,7 @@ layout: default
             </div>
             <div class="team-join text-center">
                 <h1>Want to be part of the team?</h1>
-                <a href>> See open positions</a>
+                <a href="{{ site.baseurl | prepend: site.url }}/careers/">> See open positions</a>
             </div>
         </div>
     </section>

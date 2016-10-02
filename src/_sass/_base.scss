@@ -30,3 +30,13 @@ section {
     font-size: 2em;
   }
 }
+
+.page {
+  padding: $spacing-unit-xl 0;
+  &:first-child {
+    padding-top: 96px;
+  }
+  &:last-child {
+    padding-bottom: 96px;
+  }
+}
