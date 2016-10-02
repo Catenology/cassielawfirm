@@ -1,3 +1,5 @@
+// Copyright (c) 2016 Catenology All Rights Reserved.
+
 'use strict'
 let main = () => {
     //click thumbnail to expand detail panel
@@ -74,6 +76,9 @@ let main = () => {
         };
     };
 
+    let consoleNotes = () => {
+      console.log('Website built by Catenology. Copyright (c) 2016 Catenology All Rights Reserved.');
+    }
     detailPanel($('.photowall-item'), $('.photowall-detail'));
     detailPanel($('.highlight-icon'), $('.service-list'));
     clickFilter($('.team-branch'), $('.photowall-item'), 'branch');
