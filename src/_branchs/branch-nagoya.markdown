@@ -1,7 +1,7 @@
 ---
 layout: branch
 lang: en
-name: "Nagoya"
+name: "BridgeRoots Nagoya"
 alias: "nagoya"
 weight: 3
 chief: "Tomohiro Matsukawa"

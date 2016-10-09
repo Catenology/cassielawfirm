@@ -1,7 +1,7 @@
 ---
 layout: branch
 lang: en
-name: "Hakata"
+name: "BridgeRoots Hakata"
 alias: "hakata"
 weight: 5
 chief: "Takenori Lee"

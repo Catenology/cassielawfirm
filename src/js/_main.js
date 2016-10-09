@@ -2,22 +2,50 @@
 
 'use strict'
 let main = () => {
-    //click thumbnail to expand detail panel
-    let detailPanel = (triggers, panels, collapse) => {
-        triggers.on('click', (e) => {
-            e.stopPropagation();
-            let trigger = $(e.currentTarget);
-            let panel = $(`#${trigger.data('detail')}`);
-            if (!trigger.hasClass('active')) {
-                triggers.removeClass('active');
-                panels.removeClass('active');
-                trigger.addClass('active');
-                panel.addClass('active');
-            } else {
-              triggers.removeClass('active');
-              panels.removeClass('active');
-            }
-        });
+
+    //read more toggle
+    let toggleReadMore = (triggers, textBefore, textAfter, iconBefore, iconAfter ) => {
+            triggers.on('click', (e) => {
+                let trigger = $(e.currentTarget);
+                let triggerIcon = trigger.find($('i'));
+                let triggerLabel = trigger.find($('label'));
+                let target = $(`#${trigger.data('target')}`);
+                let text = target.is('.active') ? textBefore : textAfter;
+                triggerIcon.toggleClass(`'${iconBefore} ${iconAfter}'`);
+                triggerLabel.text(text);
+                target.toggleClass('active');
+            });
+        }
+        //click brief to show detail
+    let detailPanel = (triggers, panels, closes) => {
+        if (triggers) {
+            triggers.on('click', (e) => {
+                e.stopPropagation();
+                let trigger = $(e.currentTarget);
+                let panel = $(`#${trigger.data('detail')}`);
+                if (!trigger.hasClass('active')) {
+                    triggers.removeClass('active');
+                    panels.removeClass('active');
+                    trigger.addClass('active');
+                    panel.addClass('active');
+                } else {
+                    triggers.removeClass('active');
+                    panels.removeClass('active');
+                }
+            });
+        }
+        if (closes) {
+            closes.on('click', (e) => {
+                e.stopPropagation();
+                let close = $(e.currentTarget);
+                let target = $(`#${close.data('target')}`);
+                if (!target.hasClass('active')) {
+                    panels.removeClass('active');
+                } else {
+                    panels.removeClass('active');
+                }
+            });
+        }
     };
 
     //smooth scroll to anchor on the same page
@@ -76,11 +104,15 @@ let main = () => {
         };
     };
 
+    // credits
     let consoleNotes = () => {
-      console.log('Website built by Catenology. Copyright (c) 2016 Catenology All Rights Reserved.');
+        console.log('Website built by Catenology. Copyright (c) 2016 Catenology All Rights Reserved.');
     }
-    detailPanel($('.photowall-item'), $('.photowall-detail'));
+
+    //run stuff
+    toggleReadMore($('.about-read-more'),'Read more', 'Read less', 'catif-chevron-down', 'catif-chevron-up');
     detailPanel($('.highlight-icon'), $('.service-list'));
+    detailPanel($('.service-item-read-more'), $('.service-item-description'), $('.service-close'));
     clickFilter($('.team-branch'), $('.photowall-item'), 'branch');
     smoothScroll();
 };

@@ -12,10 +12,13 @@
     }
   }
   position: relative;
-  background-color: $color-brand;
+  background-image:url(../images/hero-1.jpg);
+  background-repeat:no-repeat;
+  background-size: auto 100%;
+  background-position:top center;
   color: #fff;
   // overlay
-  &:after {
+  &:before {
     content: "";
     position: absolute;
     top: 0;
@@ -23,7 +26,9 @@
     // same height as parent
     @media screen and (min-width: $breakpoint-md) {
       height: $hero-height-md;
+      z-index:1;
     }
+    height: 100%;
     width: 100%;
     //dark mask over images to make sure white text is visible
     background-color: fade-out(#000,
@@ -43,9 +48,9 @@
   }
 }
 .about-branchs {
-  // display: none;
-  //remove spaceing for inline-block
+  //remove spaceing for inline-blockx
   font-size: 0;
+  margin-top: $spacing-unit;
 }
 .about-branch {
   background-color: fade-out($color-accent, .3);
@@ -69,16 +74,34 @@
 .about-read-more {
   text-align: center;
   cursor: pointer;
-  padding: $spacing-unit-sm;
-  border: 1px solid #fff;
-  display: none;
+  padding: $spacing-unit-xs;
+  opacity: .5;
+  @include transition(opacity, ease, .3s);
+  *,
+  a {
+    &,
+    &:visited {
+      color: #fff;
+    }
+  }
   i {
     padding-left: $spacing-unit-sm;
   }
   @media screen and (min-width:$breakpoint-md) {
-    width: 240px;
+    width: 180px;
+  }
+  &:hover {
+    opacity: 1;
   }
 }
+
 .about-more {
-  display: none;
+  max-height: 0;
+  opacity: 0;
+  @include transition(all, ease, .3s);
+  overflow: hidden;
+  &.active {
+    max-height: none;
+    opacity: 1;
+  }
 }
