@@ -40,3 +40,10 @@ section {
     padding-bottom: 96px;
   }
 }
+
+.googlemap {
+  width: 100%;
+  @media screen and (min-width: $breakpoint-md) {
+  min-height: 50vh; 
+  }
+}
