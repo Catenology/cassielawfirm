@@ -16,11 +16,6 @@ image: "team-fukuoka-akiyama"
 weight: 2 #this is for sorting order
 ---
 
-### About
-When you became a dispute, important, or "why" it was turned into this kind of situation? I thought to be a viewpoint.
-
-To elucidate the "Why?" Of one by one, we will propose a solution how to become everybody the benefit of the requester.
-
 ### Work and Education
 - Fukuoka Bar Association
 - Nagoya University School of Law

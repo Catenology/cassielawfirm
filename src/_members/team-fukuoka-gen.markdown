@@ -4,9 +4,9 @@ category: team
 date: 2016-08-21 14:50:21 -0700
 lang: en
 branch:
-  - fukuoka
-lastname: "Gen"
-firstname: "Itsubun"
+  - "Fokuoka"
+lastname: "Yan"
+firstname: "Yiwen"
 alias: "gen"
 title: "Associate Attorney (Chinese)"
 association: "Admitted in China"

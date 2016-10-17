@@ -17,16 +17,15 @@ layout: default
         </ul>
         <div class="container about-text">
             <h1>About us</h1>
-            <p>
-                BridgeRoots is a comprehensive international law firm. We provide both domestic and cross-border services in the areas of General Corporate (including personnel and labor issues, such as work rules, salary rules, etc. ), M&A, corporate reorganization,
+            <p>BridgeRoots is a comprehensive international law firm. We provide both domestic and cross-border services in the areas of General Corporate (including personnel and labor issues, such as work rules, salary rules, etc. ), M&A, corporate reorganization,
                 civil rehabilitation, business succession, liquidation and bankruptcy, debt collection, international trade, intellectual property (registration of patent, trade mark, IP infringement issues, etc.), real estate/construction, anti-monopoly
                 and anti- dumping, international dispute resolution, immigration and residence issue, etc., with cooperation of a number of business partners in both China and Korea.
             </p>
             <span class="about-read-more center-block" data-target="about_more"><label class="about-read-more-label">Read more</label> <i class="catif catif-chevron-down about-read-more-icon"></i></span>
-            <p class="about-more" id="about_more">Bridge Roots is established by Mr. Hashimoto Yoshifumi, a veteran lawyer with profound legal theory and long years of practical experience. After graduated from the Law School of Waseda University, Lawyer Hashimoto joined Takai Nobuo Law Firm and became
+            <p class="about-more" id="about_more">BridgeRoots is established by Mr. Hashimoto Yoshifumi, a veteran lawyer with profound legal theory and long years of practical experience. After graduated from the Law School of Waseda University, Lawyer Hashimoto joined Takai Nobuo Law Firm and became
     the chief representative lawyer of its Shanghai Office in 2004. During his career in China, Lawyer Hashimoto had a wide communication with and built a deep connection with businessmen, legal experts such as university professors, consulates and organizations
-    in Shanghai and from Japan or Korea, what have made a great contribution to his future career. In 2007, Lawyer Hashimoto founded Bridge Roots in his hometown Fukuoka and extended to Tokyo, Nagoya and Shanghai in later following years, with the dream
-    of bridging Asian countries as Japan, China and Korea. Since Bridge Roots focuses on team building and personnel training, we have constructed a team with professional skills, efficient coordination and service spirit in the past years. Each lawyer
+    in Shanghai and from Japan or Korea, what have made a great contribution to his future career. In 2007, Lawyer Hashimoto founded BridgeRoots in his hometown Fukuoka and extended to Tokyo, Nagoya and Shanghai in later following years, with the dream
+    of bridging Asian countries as Japan, China and Korea. Since BridgeRoots focuses on team building and personnel training, we have constructed a team with professional skills, efficient coordination and service spirit in the past years. Each lawyer
     has his/her own areas of expertise and available languages, such as Japanese, English, Chinese, Korean, at the same time we also have an internal coordination mechanism and personnel assignment which make sure our clients are able to get more professional
     legal service to realize the maximum of the interests.</p>
             <div class="about-branchs">
@@ -93,7 +92,7 @@ layout: default
                 {% assign branchs = site.branchs | sort: "weight" %}
                 {% for branch in branchs %}
                 {% if branch.alias != "shanghai" %}
-                <a title="Show team members of {{ branch.name }} office" class="team-branch" data-branch="{{ branch.alias }}">{{ branch.alias | capitalize }}</a>
+                <a title="Show team members of {{ branch.name }} office" class="team-branch" data-branch="{{ branch.name }}">{{ branch.nameshort }}</a>
                 {% endif %}
                 {% endfor %}
             </div>

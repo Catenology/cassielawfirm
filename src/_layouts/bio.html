@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<div class="page container">
-  <article itemscope itemtype="http://schema.org/BlogPosting">
+<div class="page">
+  <article itemscope itemtype="http://schema.org/BlogPosting" class="container">
     <p>
       {% for branch in page.branch %}
       {% if forloop.last %}
-      <span class="bio-branch">{{ branch | capitalize }}</span>
+      <span class="bio-branch">{{ branch }}</span>
       {% else %}
-      <span class="bio-branch">{{ branch | capitalize }}</span> |
+      <span class="bio-branch">{{ branch }}</span> |
       {% endif %}
       {% endfor %}
     </p>
@@ -22,28 +22,29 @@ layout: default
         <img src="{{ site.baseurl | prepend: site.url }}/images/{{ page.image }}.jpg" class="img-responsive" alt="{{ page.firstname }} {{ page.lastname }}" />
       </div>
     </div>
+    {% assign relatedmembers = site.members | where: "branch", page.branch | sort: "weight" %}
+    {% if relatedmembers.size > 1 %}
+    <hr>
+    <h4>Other attorneys at
+      {% for branch in page.branch %}
+      {% if forloop.last %}
+      <span class="bio-branch">{{ branch }}</span>
+      {% else %}
+      <span class="bio-branch">{{ branch }}</span> &
+      {% endif %}
+      {% endfor %}
+       office</h4>
+    <div class="photowall text-center">
+      {% for relatedmember in relatedmembers %}
+      {% if relatedmember.alias != page.alias %}
+      <figure data-branch="{{ relatedmember.branch }}" class="photowall-item">
+        <a href="{{ site.baseurl | prepend: site.url }}/{{ relatedmember.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
+        <figcaption>{{ relatedmember.firstname }} {{ relatedmember.lastname }}</figcaption>
+      </figure>
+      {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
   </article>
-  {% assign relatedmembers = site.members | where: "branch", page.branch | sort: "weight" %}
-  {% if relatedmembers.size > 1 %}
-  <hr>
-  <h4>Other attorneys at
-    {% for branch in page.branch %}
-    {% if forloop.last %}
-    <span class="bio-branch">{{ branch | capitalize }}</span>
-    {% else %}
-    <span class="bio-branch">{{ branch | capitalize }}</span> &
-    {% endif %}
-    {% endfor %}
-     office</h4>
-  <div class="photowall text-center">
-    {% for relatedmember in relatedmembers %}
-    {% if relatedmember.alias != page.alias %}
-    <figure data-branch="{{ relatedmember.branch }}" class="photowall-item">
-      <a href="{{ site.baseurl | prepend: site.url }}/{{ relatedmember.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
-      <figcaption>{{ relatedmember.firstname }} {{ relatedmember.lastname }}</figcaption>
-    </figure>
-    {% endif %}
-    {% endfor %}
-  </div>
-  {% endif %}
+
 </div>

@@ -4,76 +4,56 @@ title: "Careers at BridgeRoots"
 permalink: /careers/
 ---
 
-### Fukuoka office
+We believe in upholding the firm's core values, and fostering a culture of sharing and collaborating among all firm members. We accomplish this by emphasizing the important meaning of teams and the value of teamwork.
+We are always interested in receiving resumes from talented and committed individuals interested in joining our expanding team.
+To apply, in confidence, please send your resume first. And we will contact you for an interview after the queries.
 
-#### Experienced lawyers
+In the following roles, you should possess:
 
-This office is, those who are not in the future lawyer, who of lawyer now, either for also always looking for talented people.
-Those who visit the office you would like, on the enclosed the following documents, please apply by mail to the following address.
-We will contact you are not from this office.
+### Junior lawyer / Would-be lawyer
 
-1. Resume
-Regarding those who are not coming to the lawyer,
-2. University (. Undergraduate, graduate (final report of except for the Law School)) (Y in the copy)
-3. The final report of the Law School (transcript or score report, etc.) (Y in the copy)
-(Law School on your graduation of person only)
-4. A copy of the report of the judicial examination or new judicial test
+1. CV
+2. Education(Academy, Master Degree's Final Transcript, except the law school graduates, copy is ok)
+3. Transcript of LLM (Grade certificate or equivalent, copy is ok, limited to LLM graduates)
+4. Copy of the transcript of Judicial Examination / The New Judicial Examination
 
+Location: Fukuoka Office
 
-#### Law school graduates
+### Law school graduates
 
-This office is, we accept the office visit of the person who is your graduated from law school.
-Those who visit the office you would like, on the enclosed the following documents, please apply by mail to the following address.
-We will contact you are not from this office.
+1. CV
+2. Education(Academy, Master Degree's Final Transcript, except the law school graduates, copy is ok)
+3. Transcript of LLM (Grade certificate or equivalent, copy is ok, limited to LLM graduates)
+4. Copy of the transcript of Judicial Examination / The New Judicial Examination
 
-1. Resume
-2. University (undergraduate, graduate (final report of except for the Law School) (Y in the copy)
-3. The final report of the Law School (transcript or score report, etc.) (Y in the copy)
-4. A copy of the report of the judicial examination or new judicial test (after obtaining add Okuka)
+Location: Fukuoka Office
 
+### Office clerk
 
-#### Talents with legal affairs experience
+1. CV
+2. Career CV
 
-This office is, we accept the legal affairs experience of the office visit.
-Those who visit the office you would like, on the enclosed the following documents, please apply by mail to the following address.
-We will contact you are not from this office.
+Location: Fukuoka Office
 
-1. Resume
-2. Job resume
+### Legal Specialist (Law school graduates)
 
----
+1. CV(Please indicate your e-mail address)
+2. Law School graduate is required
 
-Questions, etc., please contact the Fukuoka office.
-
-**Fukuoka office address**
-
-Yubinbango810-0073 Fukuoka Chuo-ku, Fukuoka Maizuru 1-chome, 1-10 Tenjin Silver Building 2F
-
-Lawyer corporation BridgeRoots bridge Roots
-
-Phone: 092-738-0167
+Location: BridgeRoots Nagoya
 
 ---
 
-### Nagoya office
+## Address
 
-#### Law school graduates
+**Fukuoka Office**
 
-Nagoya office, is looking for an administrative staff of the person who was your graduation the law school.
-If you would like to interview, on the enclosed the following documents, please apply by mail to the following address.
-We will contact you are not from this office.
+Sinnihon Bldg. 5F, 2-4-22, Daimyo, Chuo-ku, Fukuoka 810-0041 Japan
 
-1. Resume (please include email address)
+Tel: 092-738-2505　/　Fax: 092-738-0169
 
-Questions, etc., please contact the Nagoya office.
+**BridgeRoots Nagoya**
 
----
-**Nagoya office address**
+Hibino Ofuisurainnzu Bldg. 3A, 2-2-5, Marunochi, Naka-ku, Nagoya 460-0002 Japan
 
-Yubinbango460-0002 gu, Nagoya, Aichi Prefecture Marunouchi 2-2-5 Hibino office Lines third floor A, Room
-
-Lawyer corporation BridgeRoots bridge roots Nagoya
-
-Phone: 052-232-2505
-
----
+Tel: 052-232-2505　/　FAX: 052-232-2556

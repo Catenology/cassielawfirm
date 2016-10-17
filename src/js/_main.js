@@ -16,11 +16,11 @@ let main = () => {
                 target.toggleClass('active');
             });
         }
-        //click brief to show detail
+
+    //detail panel
     let detailPanel = (triggers, panels, closes) => {
         if (triggers) {
             triggers.on('click', (e) => {
-                e.stopPropagation();
                 let trigger = $(e.currentTarget);
                 let panel = $(`#${trigger.data('detail')}`);
                 if (!trigger.hasClass('active')) {
@@ -36,7 +36,6 @@ let main = () => {
         }
         if (closes) {
             closes.on('click', (e) => {
-                e.stopPropagation();
                 let close = $(e.currentTarget);
                 let target = $(`#${close.data('target')}`);
                 if (!target.hasClass('active')) {
@@ -104,16 +103,47 @@ let main = () => {
         };
     };
 
-    // credits
+    // click trigger to show target
+    let toggleActive = (trigger, exclude) => {
+      let target = $(`#${trigger.data('target')}`);
+      let $document = $(document);
+      let excludeAndInside = $(exclude).find('*');
+
+      // toggle target when trigger is clicked
+      trigger.on('click', (e) => {
+        target.toggleClass('active');
+      });
+
+      //click anywhere to deactive target
+      $document.on('click', (e) => {
+        let closest = $(e.target).closest(trigger);
+        if (!closest.length) {
+          target.removeClass('active');
+        }
+      });
+
+      // exclude objects from triggering deactive
+      excludeAndInside.on('click', (e) => {
+        let currentTarget = $(e.target);
+        console.log(currentTarget.length);
+        if (currentTarget.length) {
+          target.removeClass('active');
+        }
+      });
+    };
+
+
+    // credits info in console
     let consoleNotes = () => {
         console.log('Website built by Catenology. Copyright (c) 2016 Catenology All Rights Reserved.');
     }
 
-    //run stuff
+    // run stuff
     toggleReadMore($('.about-read-more'),'Read more', 'Read less', 'catif-chevron-down', 'catif-chevron-up');
     detailPanel($('.highlight-icon'), $('.service-list'));
     detailPanel($('.service-item-read-more'), $('.service-item-description'), $('.service-close'));
     clickFilter($('.team-branch'), $('.photowall-item'), 'branch');
     smoothScroll();
+    toggleActive($('.navbar-hamburger-icon'), $('.navbar-menu'));
 };
 main();

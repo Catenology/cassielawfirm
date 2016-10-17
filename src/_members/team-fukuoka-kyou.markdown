@@ -4,17 +4,17 @@ category: team
 date: 2016-08-21 14:50:21 -0700
 lang: en
 branch:
-  - fukuoka
-lastname: "Kyo"
+  - "Fukuoka"
+lastname: "Kyou"
 firstname: "Masataka"
-alias: "kyo"
+alias: "kyou"
 title: "Associate Attorney"
 association: "Fokuoka Bar Association"
 language:
   - Korean
   - Japanese
   - English
-image: "team-fukuoka-kyo"
+image: "team-fukuoka-kyou"
 weight: 4 #this is for sorting order
 ---
 
@@ -26,3 +26,4 @@ weight: 4 #this is for sorting order
 
 ### Publications
 - *Explicate the Nationality Law of South Korean one by one* - Akashi Publication 2014
+- *Commentary on Korean Nationality Law* - Yasuhiro Okuda, Katsuhiko Oka, Masataka Kyou - Akashi Publication 2014

@@ -31,14 +31,13 @@
     padding-left: 50px;
   }
 }
-.navbar-hamburger-checkbox {
-  display: none;
-}
+// .navbar-hamburger-checkbox {
+//   display: none;
+// }
 
 .navbar-hamburger-icon {
   font-size: 24px;
   color: $color-brand;
-  display: block;
   position: absolute;
   top:0;
   right: $spacing-unit;
@@ -59,24 +58,15 @@
   }
 }
 
-.navbar-hamburger-checkbox {
-  &:checked {
-    ~ .navbar-menu {
-      max-height: 100vh;
-    }
-  }
-}
-
 .navbar-menu {
   list-style: none;
   padding: 0;
   margin: 0;
   background-color: $color-brand;
+  opacity: 0;
   max-height: 0;
   overflow: hidden;
-  @include transition(max-height,
-  1s,
-  ease);
+  @include transition(all, ease, .3s);
   position: absolute;
   width: 100%;
   top: 64px;
@@ -101,6 +91,10 @@
       }
     }
   }
+  &.active {
+    max-height: none;
+    opacity: 1;
+  }
 }
 
 @media screen and (min-width: $breakpoint-md) {
@@ -114,6 +108,7 @@
   }
   .navbar-menu {
     max-height: none;
+    opacity: 1;
     background-color: transparent;
     position: relative;
     top: initial;

@@ -4,7 +4,7 @@ category: team
 date: 2016-08-21 14:50:21 -0700
 lang: en
 branch:
-  - nagoya
+  - "BridgeRoots Nagoya"
 lastname: "Matsukawa"
 firstname: "Tomohiro"
 alias: "matsukawa"
@@ -17,15 +17,11 @@ weight: 11 #this is for sorting order
 ---
 
 ### About
-Nagoya office, creation of contracts, legal due diligence in M ​​& A, labor disputes, such as collective bargaining with trade unions, construction of a compliance system in the enterprise, debt collection, along with dealing with the corporate legal affairs such as business succession, divorce, inheritance, is a traffic accident, civil cases and the corresponding possible law offices in criminal cases such as personal, such as debt consolidation.
-In Nagoya office, lawyers and administrative staff will have a common goal "for the benefit of the client's", is willing to try a quick and sincere response to all of the requester.
+Bridge Roots Nagoya is a comprehensive and liable law firm. We provide legal services in the areas of General Corporate (including personnel and labor issues, such as work rules, salary rules, etc. ), M&A, corporate reorganization, civil rehabilitation, business succession, liquidation and bankruptcy, debt collection, international trade, intellectual property (registration of patent, trade mark, IP infringement issues, etc.), real estate/construction, anti-monopoly and anti- dumping, international dispute resolution, etc.,
 
+By the way, I love lots of sports, like soccer, football and golf. But recently, I started interested in go. As I found that the strategies and tips of go benefit my legal work in some respects, such as when you want to hit the right, firstly hit the left; the enemy s vital point is also our key point; eager for quick success and instant benefits will make you lose more. One of the mottos is don’t chase the beauty (good things) and I think this one is beyond profound. The aphorism of go is becoming the reference to myself, my daily work. So I am assiduous in my adopted job and every client.
 
-By the way, I am so far, has been a hobby sports such as baseball, soccer, golf.
-Recently, but not in the sport are familiar with Go, "Strike the left is when you want to hit the right" of the go called, such as "enemy of the Key points are my vitals," "the original is taken is trying" by understanding attract saying the law business, we believe that or not it is possible to also have a width in the law business. However, to go proverb Some too deep in the back of "Do beauty chases", also, after all is because not only in the world of go proverb, as I, while the go proverb to the reference, every day of the legal services in good faith, we would like to treat it carefully.
-
-
-Last but not least, I am, but become client's interests at first glance, does not mandatory request, such as contrary to social ethics. It is to be mandatory such cases, not only diminish the quality of the lawyer, eventually become a thing to diminish the quality of the client's own, because do not think that would be for the requester.
+Last but not the least, there exits one kind of case that at first glance everyone thinks it will turn into interest. However if it violates the social ethics, I will refuse the request without hesitation. The acceptance of this kind of case will belittle the dignity of a lawyer and also the client. In the final analysis, the lawyer does not consider clients’ needs at all.
 
 ### Work and Education
 - Waseda University (LL.B.,)
