@@ -4,7 +4,7 @@ category: team
 date: 2016-08-21 14:50:21 -0700
 lang: en
 branch:
-  - fukuoka
+  - "Fukuoka"
 lastname: "Akiyama"
 firstname: "Rie"
 alias: "akiyama"

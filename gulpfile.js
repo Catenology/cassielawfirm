@@ -78,7 +78,7 @@ gulp.task('imagemin', () => {
   .pipe(imagemin({
     verbose: true
   }))
-  .pipe(gulp.dest('images'));
+  .pipe(gulp.dest('src/images'));
 });
 //download vendor files
 gulp.task('download', ['clean'], () => {
