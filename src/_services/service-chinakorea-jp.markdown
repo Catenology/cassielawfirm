@@ -1,0 +1,33 @@
+---
+lang: jp
+title: "中国・韓国関係業務"
+name: "中国・韓国関係業務"
+alias: "chkr"
+weight: 1
+icon: "fa fa-map"
+items:
+  - name: "M&A案件"
+    alias: "ma"
+    description: "日本企業の中国・韓国企業の買収、中国・韓国企業の日本企業買収、中国・韓国での日系企業同士の買収等のアドバイザリー業務・各種デューデリジェンス業務"
+  - name: "債権回収案件"
+    alias: "debt"
+    description: "中国・韓国における未回収債権の回収作業全般"
+  - name: "不動産/建設・建築案件"
+    alias: "realty"
+    description: "中国・韓国における不動産、建設・建築に関する紛争全般"
+  - name: "労務紛争処理"
+    alias: "labor"
+    description: "企業側に立った労務問題処理全般"
+  - name: "中国・韓国現地法人設立支援"
+    alias: "est"
+    description: "進出先の紹介、手続きの履践等、中国・韓国進出に関わる問題全般"
+  - name: "企業設立後の各種支援"
+    alias: "postest"
+    description: "就業規則、賃金規定の作成、顧問弁護士業務等"
+  - name: "知的財産権関係"
+    alias: "ip"
+    description: "中国・韓国における特許権、商標権等の登録など"
+  - name: "各種中国・韓国情報の提供"
+    alias: "info"
+    description: "日系企業に影響を与える法令、判例等が出た場合の情報提供"
+---

@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div class="page">
+  <article itemscope itemtype="http://schema.org/BlogPosting" class="container">
+    <p>
+      {% for office-name in page.office-name %}
+      {% if forloop.last %}
+      <span class="bio-office">{{ office-name | camelcase }}</span>
+      {% else %}
+      <span class="bio-office">{{ office-name | camelcase }}</span> |
+      {% endif %}
+      {% endfor %}
+    </p>
+    {% if page.url contains "-ch" or page.url contains "-jp" %}
+    <h1>{{ page.lastname }} {{ page.firstname }}</h1>
+    {% else %}
+    <h1>{{ page.firstname | capitalize }} {{ page.lastname | capitalize }}</h1>
+    {% endif %}
+
+    <p>{{ page.title }}</p>
+    <div class="row">
+      <div class="nine columns">
+        {{ content }}
+      </div>
+      <div class="three columns">
+        <img src="{{ site.baseurl | prepend: site.url }}/images/{{ page.image }}.jpg" class="img-responsive" alt="{{ page.firstname }} {{ page.lastname }}" />
+      </div>
+    </div>
+    {% if page.url contains "-ch" %}
+    {% assign members = site.members | where: "lang","ch" %}
+    {% elsif page.url contains "-jp" %}
+    {% assign members = site.members | where: "lang","jp" %}
+    {% else %}
+    {% assign members = site.members | where: "lang","en" %}
+    {% endif %}
+    {% assign relatedmembers = members | where: "office", page.office | sort: "weight" %}
+    {% if relatedmembers.size > 1 %}
+    <hr>
+    <h4>Other attorneys at
+      {% for office in page.office %}
+        {% if forloop.last %}
+        <span class="bio-office">{{ office }}</span>
+        {% else %}
+        <span class="bio-office">{{ office }}</span> &
+        {% endif %}
+      {% endfor %}
+       office</h4>
+    <div class="photowall text-center">
+      {% for relatedmember in relatedmembers %}
+        {% if relatedmember.alias != page.alias %}
+        <figure data-office="{{ relatedmember.office }}" class="photowall-item">
+          <a href="{{ site.baseurl | prepend: site.url }}/{{ relatedmember.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
+          <figcaption>{{ relatedmember.firstname }} {{ relatedmember.lastname }}</figcaption>
+        </figure>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+  </article>
+
+</div>

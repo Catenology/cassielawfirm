@@ -1,0 +1,160 @@
+---
+layout: default
+---
+<div id="top"></div>
+<div class="content-wrapper">
+    <section class="about" id="about">
+        <ul class="carousel-fw">
+            <li>
+                <!--carousel slide holder tag-->
+            </li>
+            <li>
+                <!--carousel slide holder tag-->
+            </li>
+            <li>
+                <!--carousel slide holder tag-->
+            </li>
+        </ul>
+        <div class="container about-text">
+          <h1>弁護士法人ブリッジルーツについて</h1>
+            <p>弁護士法人ブリッジルーツでは、２００７年より、上海に法律オフィスを設置するとともに、中国・韓国現地の法律事務所との提携により、迅速且つ的確な法的コンサルタント業務を実施しています。日本企業の中国・韓国進出のみならず、中国・韓国企業の日本進出についての法的サポートも取り扱っています。</p>
+            <span class="about-read-more center-block" data-target="about_more"><label class="about-read-more-label" data-expand="もっと詳しくは" data-collapse='隠す'>もっと詳しくは</label> <i class="catif catif-chevron-down about-read-more-icon"></i></span>
+            <p class="about-more" id="about_more">BridgeRootsは、実際にはチームビルディングと才能、と実践の年の文化に創業添付非常に重要なので、弁護士の真剣な態度、優れた専門的なスキル、協力と協調的かつ効率的なチームを和らげます。それは他の方法を確保するために、マルチ懲戒法律サービス、人事および内部調整メカニズムの効率的な展開を来るときBridgeRoots各弁護士は、一般的に集中し、1つまたは2つの事業分野での専門知識、および日本語、中国語、韓国語、英語、に堪能強力なサポートを提供し、クライアントの利益を確保するために緊密に協力する準備ができて弁護士の事業領域。</p>
+            <div class="about-offices">
+                {% assign offices = site.offices | where:"lang","jp" | sort:"weight" %}
+                {% for office in offices %}
+                <a class="about-office center-block" href="{{ site.baseurl | prepend: site.url }}{{ office.url }}">{{ office.nameshort }} <br>{{ office.tel }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <h1>業務案内</h1>
+            <div class="highlight">
+              {% assign services = site.services | sort: "weight" | where:"lang","jp" %}
+                {% for service in services %}
+                <figure class="highlight-item">
+                  {% if forloop.first %}
+                    <div data-detail="service_detail_{{ service.alias }}" class="highlight-icon active">
+                  {% else %}
+                    <div data-detail="service_detail_{{ service.alias }}" class="highlight-icon">
+                  {% endif %}
+                        <i class="{{ service.icon }}"></i>
+                    </div>
+                    <figcaption>{{ service.name }}</figcaption>
+                </figure>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="service-detail">
+            <div class="container">
+              {% assign services = site.services | sort: "weight" | where:"lang","jp" %}
+                {% for service in services %}
+                {% if forloop.first %}
+                  <div id="service_detail_{{ service.alias }}" class="service-list center-block active">
+                {% else %}
+                  <div id="service_detail_{{ service.alias }}" class="service-list center-block">
+                {% endif %}
+                {% for item in service.items %}
+                  <div class="service-item">
+                      <span class="service-item-title">{{ item.name }}</span>
+                      <span class="service-item-read-more" data-detail="service_item_{{ service.alias }}_{{ item.alias }}">詳しくは</span>
+                  </div>
+                  <div class="service-item-description" id="service_item_{{ service.alias }}_{{ item.alias }}">
+                    <div class="service-close pull-right" title="Close detail" data-target="service_item_{{ service.alias }}_{{ item.alias }}"><i class="catif catif-navigate-close"></i></div>
+                    <h3>{{ item.name }}</h3>
+                    <p>
+                      {{ item.description }}
+                    </p>
+                  </div>
+                        <div class="service-item empty">
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+    </section>
+    <section class="team" id="team">
+        <div class="container">
+            <h1>弁護士・会計士のご紹介</h1>
+            <div class="team-filter text-center">
+                <a title="Show all team members" class="team-office active" data-office="all">全て</a>
+                {% assign offices = site.offices | sort: "weight" | where:"lang","jp" %}
+                {% for office in offices %}
+                {% if office.alias != "shanghai" %}
+                <a title="{{ office.name }}オフィス" class="team-office" data-office="{{ office.alias }}">{{ office.nameshort }}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="team-thumbnail">
+                <div class="photowall text-center">
+                  {% assign members = site.members | sort: "weight" | where:"lang","jp" %}
+                    {% for member in members %}
+                    <figure data-office="{{ member.office }}" class="photowall-item">
+                        <a href="{{ site.baseurl | prepend: site.url }}{{ member.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ member.image }}-sm.jpg" alt="{{ member.firstname }} {{ member.lastname }}" class="img-responsive" /></a>
+                        <figcaption>{{ member.lastname }} {{ member.firstname }}</figcaption>
+                    </figure>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="team-join text-center">
+                <h1>採用情報</h1>
+                <a href="{{ site.baseurl | prepend: site.url }}careers">> 現在弁護士の方、これから弁護士になられる方</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h1>お問い合わせ</h1>
+            <form class="form">
+                <div class="row">
+                    <div class="six columns">
+                        <div class="row">
+                            <div class="twelve columns input-wrapper">
+                                <input id="txtName" name="Name" type="text" placeholder=" " />
+                                <label for="txtName">名前</label>
+                            </div>
+                            <div class="twelve columns input-wrapper">
+                                <input id="txtEmail" name="Email" type="text" placeholder=" " />
+                                <label for="txtEmail">メール</label>
+                            </div>
+                            <div class="twelve columns input-wrapper">
+                                <input id="txtAddress" name="Address" type="text" placeholder=" " />
+                                <label for="txtAddress">住所</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="six columns input-wrapper">
+                                <input id="txtZipcode" name="Zipcode" type="text" placeholder=" " />
+                                <label for="txtZipcode">郵便番号</label>
+                            </div>
+                            <div class="six columns input-wrapper">
+                                <input id="txtState" name="State" type="text" placeholder=" " />
+                                <label for="txtState">州</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="twelve columns input-wrapper">
+                                <input id="txtCompany" name="Company" type="text" placeholder=" " />
+                                <label for="txtCompany">会社</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="six columns">
+                        <div class="input-wrapper">
+                            <textarea id="txtMessage" name="Message" placeholder=" "></textarea>
+                            <label for="txtMessage">メッセージ</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="three columns offset-by-nine input-wrapper">
+                        <input type="submit" name="submit" value="送信する" class="btn btn-default cta" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    </div>

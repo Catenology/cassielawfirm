@@ -1,0 +1,30 @@
+---
+lang: jp
+title: "法人のお客様"
+name: "法人のお客様"
+alias: "corp"
+weight: 2
+icon: "fa fa-group"
+items:
+  - name: "顧問弁護士"
+    alias: "consulting"
+    description: "各種法律問題の無料相談、契約書の作成・レビュー等"
+  - name: "企業法務"
+    alias: "corp"
+    description: "各種契約書の作成、M&A等の企業再編等、企業法務全般"
+  - name: "民事再生"
+    alias: "civil"
+    description: "民事再生に関わる問題全般"
+  - name: "事業承継"
+    alias: "succession"
+    description: "事業承継に関わる問題全般"
+  - name: "廃業(破産･清算)"
+    alias: "discount"
+    description: "法人破産に関わる問題全般。"
+  - name: "売掛金回収・保全（債権回収）"
+    alias: "debt"
+    description: "未回収債権の回収業務全般"
+  - name: "会社内部の問題（人事労務）"
+    alias: "labor"
+    description: "就業規則、賃金規定の作成、調停、訴訟等、就業規則に沿った労務問題全般"
+---

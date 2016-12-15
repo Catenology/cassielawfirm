@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<div class="page">
+  <article itemscope itemtype="http://schema.org/BlogPosting" class="container">
+  <h1>{{ page.name }}</h1>
+  <div class="row">
+    <div class="six columns">
+      {% if page.url contains "-ch" %}
+      <p>代表律师： {{ page.chief }}</p>
+      {% elsif page.url contains "-jp" %}
+      <p>代表弁護士： {{ page.chief }}</p>
+      {% else %}
+      <p>Chief Representative Attorney: {{ page.chief }}</p>
+      {% endif %}
+
+    </div>
+    <div class="six columns">
+      <p>
+        {{ page.address.street }} <br>
+        {{ page.address.state }} {{ page.address.zipcode }} {{ page.address.country }}
+      </p>
+      <p>
+        Tel: {{ page.tel }} <br>
+        Fax: {{ page.fax }}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    {{ content }}
+  </div>
+</div>
+</div>

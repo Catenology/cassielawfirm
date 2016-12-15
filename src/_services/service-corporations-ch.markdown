@@ -1,0 +1,30 @@
+---
+lang: ch
+title: "法人客户相关业务"
+name: "法人客户"
+alias: "corp"
+weight: 2
+icon: "fa fa-group"
+items:
+  - name: "法律顾问服务"
+    alias: "consulting"
+    description: "各种法律问题的免费咨询、合同的制成、合同的审核等。"
+  - name: "一般企业法务"
+    alias: "corp"
+    description: "合同的制成、合同审核等一般企业法务。"
+  - name: "企业再生"
+    alias: "civil"
+    description: "主要包含企业并购、企业重组等企业再生等业务。"
+  - name: "企业继承"
+    alias: "succession"
+    description: "企业继承的相关业务。"
+  - name: "业务终止"
+    alias: "discount"
+    description: "法人破产、清算等相关业务。"
+  - name: "债权回收"
+    alias: "debt"
+    description: "应收账款等未回收债权的回收及保全业务。"
+  - name: "人事劳务"
+    alias: "labor"
+    description: "就业规则、薪金构成相关规则的制作及修改、人事劳务相关的调停、诉讼等。"
+---
