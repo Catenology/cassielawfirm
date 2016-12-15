@@ -1,10 +1,12 @@
 ---
-layout: bio
+layout: member
 category: team
 date: 2016-08-21 14:50:21 -0700
 lang: en
-branch:
-  - "Fukuoka"
+office:
+  - "fukuoka"
+office-name:
+  - "BridgeRoots Fukuoka Office"
 lastname: "Kyou"
 firstname: "Masataka"
 alias: "kyou"

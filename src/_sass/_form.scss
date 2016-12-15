@@ -3,11 +3,11 @@ textarea {
   outline: none;
   border: 2px solid transparent;
   width: 100%;
+  padding: 16px 0;
 }
 
 input {
   &[type="submit"] {
-    padding: $spacing-unit;
     height: auto;
   }
 }

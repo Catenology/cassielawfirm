@@ -4,12 +4,14 @@
 let main = () => {
 
     //read more toggle
-    let toggleReadMore = (triggers, textBefore, textAfter, iconBefore, iconAfter ) => {
+    let toggleReadMore = (triggers, iconBefore, iconAfter ) => {
             triggers.on('click', (e) => {
                 let trigger = $(e.currentTarget);
                 let triggerIcon = trigger.find($('i'));
                 let triggerLabel = trigger.find($('label'));
                 let target = $(`#${trigger.data('target')}`);
+                let textBefore = triggerLabel.data('expand');
+                let textAfter = triggerLabel.data('collapse');
                 let text = target.is('.active') ? textBefore : textAfter;
                 triggerIcon.toggleClass(`'${iconBefore} ${iconAfter}'`);
                 triggerLabel.text(text);
@@ -139,10 +141,10 @@ let main = () => {
     }
 
     // run stuff
-    toggleReadMore($('.about-read-more'),'Read more', 'Read less', 'catif-chevron-down', 'catif-chevron-up');
+    toggleReadMore($('.about-read-more'), 'catif-chevron-down', 'catif-chevron-up');
     detailPanel($('.highlight-icon'), $('.service-list'));
     detailPanel($('.service-item-read-more'), $('.service-item-description'), $('.service-close'));
-    clickFilter($('.team-branch'), $('.photowall-item'), 'branch');
+    clickFilter($('.team-office'), $('.photowall-item'), 'office');
     smoothScroll();
     toggleActive($('.navbar-hamburger-icon'), $('.navbar-menu'));
 };

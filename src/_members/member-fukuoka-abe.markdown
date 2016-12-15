@@ -1,11 +1,14 @@
 ---
-layout: bio
+layout: member
 category: team
 date: 2016-08-21 14:50:21 -0700
 lang: en
-branch:
- - "Fukuoka"
- - "Tokyo"
+office:
+ - "fukuoka"
+ - "tokyo"
+office-name:
+  - "BridgeRoots Fukuoka Office"
+  - "BridgeRoots Tokyo Office"
 lastname: "Abe"
 firstname: "Takashi"
 alias: "abe"

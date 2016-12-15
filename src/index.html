@@ -16,22 +16,41 @@ layout: default
             </li>
         </ul>
         <div class="container about-text">
-            <h1>About us</h1>
-            <p>BridgeRoots is a comprehensive international law firm. We provide both domestic and cross-border services in the areas of General Corporate (including personnel and labor issues, such as work rules, salary rules, etc. ), M&A, corporate reorganization,
-                civil rehabilitation, business succession, liquidation and bankruptcy, debt collection, international trade, intellectual property (registration of patent, trade mark, IP infringement issues, etc.), real estate/construction, anti-monopoly
-                and anti- dumping, international dispute resolution, immigration and residence issue, etc., with cooperation of a number of business partners in both China and Korea.
-            </p>
-            <span class="about-read-more center-block" data-target="about_more"><label class="about-read-more-label">Read more</label> <i class="catif catif-chevron-down about-read-more-icon"></i></span>
-            <p class="about-more" id="about_more">BridgeRoots is established by Mr. Hashimoto Yoshifumi, a veteran lawyer with profound legal theory and long years of practical experience. After graduated from the Law School of Waseda University, Lawyer Hashimoto joined Takai Nobuo Law Firm and became
-    the chief representative lawyer of its Shanghai Office in 2004. During his career in China, Lawyer Hashimoto had a wide communication with and built a deep connection with businessmen, legal experts such as university professors, consulates and organizations
-    in Shanghai and from Japan or Korea, what have made a great contribution to his future career. In 2007, Lawyer Hashimoto founded BridgeRoots in his hometown Fukuoka and extended to Tokyo, Nagoya and Shanghai in later following years, with the dream
-    of bridging Asian countries as Japan, China and Korea. Since BridgeRoots focuses on team building and personnel training, we have constructed a team with professional skills, efficient coordination and service spirit in the past years. Each lawyer
-    has his/her own areas of expertise and available languages, such as Japanese, English, Chinese, Korean, at the same time we also have an internal coordination mechanism and personnel assignment which make sure our clients are able to get more professional
-    legal service to realize the maximum of the interests.</p>
-            <div class="about-branchs">
-              {% assign branchs = site.branchs | sort: "weight" %}
-                {% for branch in branchs %}
-                <a class="about-branch center-block" href="{{ site.baseurl | prepend: site.url }}/{{ branch.url }}">{{ branch.alias | capitalize }} <br>{{ branch.tel }}</a>
+          <h1>About us</h1>
+            <p>BridgeRoots is a comprehensive international law firm. We provide both
+            domestic and cross-border services in the areas of General Corporate
+            (including personnel and labor issues, such as work rules, salary rules,
+            etc. ), M&A, corporate reorganization, civil rehabilitation, business
+            succession, liquidation and bankruptcy, debt collection, international
+            trade, intellectual property (registration of patent, trade mark, IP
+            infringement issues, etc.), real estate/construction, anti-monopoly and
+            anti-dumping, international dispute resolution, immigration and residence
+            issue, etc., with cooperation of a number of business partners in both
+            China and Korea.</p>
+            <span class="about-read-more center-block" data-target="about_more"><label class="about-read-more-label" data-expand="Read more" data-collapse="Hide">Read more</label> <i class="catif catif-chevron-down about-read-more-icon"></i></span>
+            <p class="about-more" id="about_more">BridgeRoots is established by Mr. Hashimoto Yoshifumi, a veteran lawyer
+            with profound legal theory and long years of practical experience. After
+            graduated from the Law School of Waseda University, Lawyer Hashimoto
+            joined Takai Nobuo Law Firm and became the chief representative lawyer of
+            its Shanghai Office in 2004. During his career in China, Lawyer Hashimoto
+            had a wide communication with and built a deep connection with
+            businessmen, legal experts such as university professors, consulates and
+            organizations in Shanghai and from Japan or Korea, what have made a great
+            contribution to his future career. In 2007, Lawyer Hashimoto founded
+            BridgeRoots in his hometown Fukuoka and extended to Tokyo, Nagoya and
+            Shanghai in later following years, with the dream of bridging Asian
+            countries as Japan, China and Korea. Since BridgeRoots focuses on team
+            building and personnel training, we have constructed a team with
+            professional skills, efficient coordination and service spirit in the past
+            years. Each lawyer has his/her own areas of expertise and available
+            languages, such as Japanese, English, Chinese, Korean, at the same time we
+            also have an internal coordination mechanism and personnel assignment
+            which make sure our clients are able to get more professional legal
+            service to realize the maximum of the interests.</p>
+            <div class="about-offices">
+                {% assign offices = site.offices | where:"lang","en" | sort:"weight" %}
+                {% for office in offices %}
+                <a class="about-office center-block" href="{{ site.baseurl | prepend: site.url }}{{ office.url }}">{{ office.alias | capitalize }} <br>{{ office.tel }}</a>
                 {% endfor %}
             </div>
         </div>
@@ -40,7 +59,7 @@ layout: default
         <div class="container">
             <h1>Services</h1>
             <div class="highlight">
-              {% assign services = site.services | sort: "weight" %}
+              {% assign services = site.services | sort: "weight" | where:"lang","en" %}
                 {% for service in services %}
                 <figure class="highlight-item">
                   {% if forloop.first %}
@@ -57,7 +76,7 @@ layout: default
         </div>
         <div class="service-detail">
             <div class="container">
-              {% assign services = site.services | sort: "weight" %}
+              {% assign services = site.services | sort: "weight" | where:"lang","en" %}
                 {% for service in services %}
                 {% if forloop.first %}
                   <div id="service_detail_{{ service.alias }}" class="service-list center-block active">
@@ -88,20 +107,20 @@ layout: default
         <div class="container">
             <h1>Team</h1>
             <div class="team-filter text-center">
-                <a title="Show all team members" class="team-branch active" data-branch="all">All</a>
-                {% assign branchs = site.branchs | sort: "weight" %}
-                {% for branch in branchs %}
-                {% if branch.alias != "shanghai" %}
-                <a title="Show team members of {{ branch.name }} office" class="team-branch" data-branch="{{ branch.name }}">{{ branch.nameshort }}</a>
+                <a title="Show all team members" class="team-office active" data-office="all">All</a>
+                {% assign offices = site.offices | sort: "weight" | where:"lang","en" %}
+                {% for office in offices %}
+                {% if office.alias != "shanghai" %}
+                <a title="Show team members of {{ office.name }} office" class="team-office" data-office="{{ office.alias }}">{{ office.name }}</a>
                 {% endif %}
                 {% endfor %}
             </div>
             <div class="team-thumbnail">
                 <div class="photowall text-center">
-                  {% assign members = site.members | sort: "weight" %}
+                  {% assign members = site.members | sort: "weight" | where: "lang","en" %}
                     {% for member in members %}
-                    <figure data-branch="{{ member.branch }}" class="photowall-item">
-                        <a href="{{ site.baseurl | prepend: site.url }}/{{ member.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ member.image }}-sm.jpg" alt="{{ member.firstname }} {{ member.lastname }}" class="img-responsive" /></a>
+                    <figure data-office="{{ member.office }}" class="photowall-item">
+                        <a href="{{ site.baseurl | prepend: site.url }}{{ member.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ member.image }}-sm.jpg" alt="{{ member.firstname }} {{ member.lastname }}" class="img-responsive" /></a>
                         <figcaption>{{ member.firstname }} {{ member.lastname }}</figcaption>
                     </figure>
                     {% endfor %}
@@ -109,7 +128,7 @@ layout: default
             </div>
             <div class="team-join text-center">
                 <h1>Want to be part of the team?</h1>
-                <a href="{{ site.baseurl | prepend: site.url }}/careers/">> See open positions</a>
+                <a href="{{ site.baseurl | prepend: site.url }}careers">> See open positions</a>
             </div>
         </div>
     </section>
@@ -159,7 +178,7 @@ layout: default
                 </div>
                 <div class="row">
                     <div class="three columns offset-by-nine input-wrapper">
-                        <input type="submit" name="Send" class="btn btn-default cta" />
+                        <input type="submit" name="Send" value="Send" class="btn btn-default cta" />
                     </div>
                 </div>
             </form>

@@ -1,10 +1,12 @@
 ---
-layout: bio
+layout: member
 category: team
 date: 2016-08-21 14:50:21 -0700
 lang: en
-branch:
-  - "Tokyo"
+office:
+  - "tokyo"
+office-name:
+  - "BridgeRoots Tokyo Office"
 lastname: "Takahashi"
 firstname: "Fumiki"
 alias: "takahashi"

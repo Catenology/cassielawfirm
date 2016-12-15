@@ -22,7 +22,7 @@ items:
     alias: "discount"
     description: "Issues relating to bankruptcy, liquidation, etc. of corporations."
   - name: "Debt Collection"
-    alias: "dept"
+    alias: "debt"
     description: "Issues relating to collection or provisional remedy, etc. of Receivables and other debts."
   - name: "Personnel and Labor Relations"
     alias: "labor"

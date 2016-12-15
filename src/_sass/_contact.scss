@@ -7,8 +7,6 @@
   label {
     color: $color-brand;
     position: absolute;
-    top: 1em;
-    left: 1em;
   }
   input,
   textarea {
@@ -21,7 +19,7 @@
     }
   }
   textarea {
-    height: 23.5em;
+    height: 316px;
   }
   .btn.cta {
     background-color: $color-accent;
