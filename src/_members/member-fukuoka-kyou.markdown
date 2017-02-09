@@ -10,7 +10,7 @@ office-name:
 lastname: "Kyou"
 firstname: "Masataka"
 alias: "kyou"
-title: "Associate Attorney"
+title: "Associate"
 association: "Fokuoka Bar Association"
 language:
   - Korean

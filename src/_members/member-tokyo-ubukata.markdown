@@ -10,12 +10,12 @@ office-name:
 lastname: "Ubukata"
 firstname: "Mari"
 alias: "ubukata"
-title: "Associate Attorney"
+title: "Associate"
 association: "Daiichi Tokyo Bar Association"
 language:
   - Japanese
 image: "member-tokyo-ubukata"
-weight: 7 #this is for sorting order
+weight: 8 #this is for sorting order
 ---
 
 ### Work and Education

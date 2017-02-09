@@ -10,12 +10,12 @@ office-name:
 lastname: "Soma"
 firstname: "Nobuko"
 alias: "soma"
-title: "Associate Attorney"
+title: "Associate"
 association: "Aichi Bar Association"
 language:
   - Japanese
 image: "member-nagoya-soma"
-weight: 13 #this is for sorting order
+weight: 14 #this is for sorting order
 ---
 
 ### Work and Education

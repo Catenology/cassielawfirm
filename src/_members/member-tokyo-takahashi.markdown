@@ -15,7 +15,7 @@ association: "Daiichi Tokyo Bar Association"
 language:
   - Japanese
 image: "member-tokyo-takahashi"
-weight: 6 #this is for sorting order
+weight: 7 #this is for sorting order
 ---
 
 ### Work and Education

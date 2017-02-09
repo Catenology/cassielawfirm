@@ -6,8 +6,8 @@ nameshort: "BR Hakata"
 alias: "hakata"
 weight: 5
 chief: "Takenori Lee"
-tel: "092-409-8984"
-fax: "092-409-8985"
+tel: "+81-92-409-8984"
+fax: "+81-92-409-8985"
 address:
   street: "Fuo-si-zu Hakata Bldg. 2F, 1-9-5, Hakataeki Higashi, Hakata-ku"
   state: "Hakata"

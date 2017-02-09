@@ -14,9 +14,9 @@ firstname: "高士"
 alias: "abe"
 title: "公認会計士・税理士"
 language:
-  - Japanese
+  - 日本語
 image: "member-fukuoka-abe"
-weight: 5 #this is for sorting order
+weight: 6 #this is for sorting order
 ---
 
 ### プロフィール

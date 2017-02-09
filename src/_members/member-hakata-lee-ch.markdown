@@ -11,12 +11,12 @@ lastname: "李"
 firstname: "武哲"
 alias: "lee"
 title: "代表律师"
-association: "Fukuoka Bar Association"
+association: "福冈律师协会"
 language:
-  - Korean
-  - Japanese
+  - 韩国语
+  - 日本语
 image: "member-hakata-lee"
-weight: 15 #this is for sorting order
+weight: 17 #this is for sorting order
 ---
 
 ### 经历

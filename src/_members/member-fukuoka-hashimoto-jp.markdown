@@ -11,9 +11,9 @@ lastname: "橋本"
 firstname: "吉文"
 alias: "hashimoto"
 title: "総代表弁護士"
-association: "Tokyo BAR Association"
+association: "東京弁護士会所属"
 language:
-  - Japanese
+  - 日本語
 image: "member-fukuoka-hashimoto"
 weight: 1 #this is for sorting order
 ---

@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="top"></div>
 <div class="content-wrapper">
-    <section class="about" id="about">
+    <section class="about">
         <ul class="carousel-fw">
             <li>
                 <!--carousel slide holder tag-->
@@ -18,8 +18,8 @@ layout: default
         <div class="container about-text">
           <h1>弁護士法人ブリッジルーツについて</h1>
             <p>弁護士法人ブリッジルーツでは、２００７年より、上海に法律オフィスを設置するとともに、中国・韓国現地の法律事務所との提携により、迅速且つ的確な法的コンサルタント業務を実施しています。日本企業の中国・韓国進出のみならず、中国・韓国企業の日本進出についての法的サポートも取り扱っています。</p>
-            <span class="about-read-more center-block" data-target="about_more"><label class="about-read-more-label" data-expand="もっと詳しくは" data-collapse='隠す'>もっと詳しくは</label> <i class="catif catif-chevron-down about-read-more-icon"></i></span>
-            <p class="about-more" id="about_more">BridgeRootsは、実際にはチームビルディングと才能、と実践の年の文化に創業添付非常に重要なので、弁護士の真剣な態度、優れた専門的なスキル、協力と協調的かつ効率的なチームを和らげます。それは他の方法を確保するために、マルチ懲戒法律サービス、人事および内部調整メカニズムの効率的な展開を来るときBridgeRoots各弁護士は、一般的に集中し、1つまたは2つの事業分野での専門知識、および日本語、中国語、韓国語、英語、に堪能強力なサポートを提供し、クライアントの利益を確保するために緊密に協力する準備ができて弁護士の事業領域。</p>
+            <!-- <span class="about-read-more center-block" data-target="about_more"><label class="about-read-more-label" data-expand="もっと詳しくは" data-collapse='隠す'>もっと詳しくは</label> <i class="catif catif-chevron-down about-read-more-icon"></i></span>
+            <p class="about-more" id="about_more">BridgeRootsは、実際にはチームビルディングと才能、と実践の年の文化に創業添付非常に重要なので、弁護士の真剣な態度、優れた専門的なスキル、協力と協調的かつ効率的なチームを和らげます。それは他の方法を確保するために、マルチ懲戒法律サービス、人事および内部調整メカニズムの効率的な展開を来るときBridgeRoots各弁護士は、一般的に集中し、1つまたは2つの事業分野での専門知識、および日本語、中国語、韓国語、英語、に堪能強力なサポートを提供し、クライアントの利益を確保するために緊密に協力する準備ができて弁護士の事業領域。</p> -->
             <div class="about-offices">
                 {% assign offices = site.offices | where:"lang","jp" | sort:"weight" %}
                 {% for office in offices %}

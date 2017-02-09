@@ -10,7 +10,7 @@ office-name:
 lastname: "Akiyama"
 firstname: "Rie"
 alias: "akiyama"
-title: "Associate Attorney"
+title: "Chief Representative"
 association: "Fukuoka Bar Association"
 language:
   - Japanese

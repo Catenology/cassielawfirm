@@ -12,10 +12,10 @@ firstname: "亮"
 alias: "chen"
 title: "顧問"
 language:
-  - Chinese
-  - Japanese
+  - 中国語
+  - 日本語
 image: "member-tokyo-chen"
-weight: 10 #this is for sorting order
+weight: 11 #this is for sorting order
 ---
 
 ### 経歴

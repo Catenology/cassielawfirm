@@ -11,11 +11,11 @@ lastname: "姜"
 firstname: "成贤"
 alias: "kyou"
 title: "律师"
-association: "Fokuoka Bar Association"
+association: "福冈律师协会"
 language:
-  - Korean
-  - Japanese
-  - English
+  - 韩国语
+  - 日本语
+  - 英语
 image: "member-fukuoka-kyou"
 weight: 4 #this is for sorting order
 ---

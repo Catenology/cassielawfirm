@@ -11,14 +11,14 @@ lastname: "明永"
 firstname: "雄太"
 alias: "akenaga"
 title: "律师"
-association: "Aichi Bar Association"
+association: "爱知县律师协会"
 language:
-  - Japanese
+  - 日本语
 image: "member-nagoya-akenaga"
-weight: 12 #this is for sorting order
+weight: 13 #this is for sorting order
 ---
 
 ### 经历
-- 愛知県立横須賀高等学校 卒業
-- 同志社大学法学部法律学科
-- 立命館大学法科大学院 修了
+
+- 同志社大学法学部 学士
+- 立命馆大学法学院 硕士

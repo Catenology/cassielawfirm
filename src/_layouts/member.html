@@ -51,7 +51,11 @@ layout: default
         {% if relatedmember.alias != page.alias %}
         <figure data-office="{{ relatedmember.office }}" class="photowall-item">
           <a href="{{ site.baseurl | prepend: site.url }}/{{ relatedmember.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
+          {% if page.url contains "-ch" or page.url contains "-jp" %}
+          <figcaption>{{ relatedmember.lastname }} {{ relatedmember.firstname }}</figcaption>
+          {% else %}
           <figcaption>{{ relatedmember.firstname }} {{ relatedmember.lastname }}</figcaption>
+          {% endif %}
         </figure>
         {% endif %}
       {% endfor %}

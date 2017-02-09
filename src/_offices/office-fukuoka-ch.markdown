@@ -6,7 +6,7 @@ nameshort: "福冈"
 alias: "fukuoka"
 weight: 1
 chief: "秋山理惠"
-tel: "+81-92-738-2505"
+tel: "+81-92-738-0167"
 fax: "+81-92-738-0169"
 address:
  street: "中央区大名二丁目4-22 新日本BLdg. 5F"

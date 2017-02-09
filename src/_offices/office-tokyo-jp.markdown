@@ -6,8 +6,8 @@ nameshort: "东京"
 alias: "tokyo"
 weight: 2
 chief: "高桥 史记"
-tel: "+81-3-5368-1233"
-fax: "+81-3-5368-1255"
+tel: "03-5368-1233"
+fax: "03-5368-1255"
 address:
   street: "新宿区新宿1丁目10-5 岡田ビル5"
   state: "東京都"

@@ -6,8 +6,8 @@ nameshort: "福岡"
 alias: "fukuoka"
 weight: 1
 chief: "秋山 理恵"
-tel: "+81-92-738-2505"
-fax: "+81-92-738-0169"
+tel: "092-738-0167"
+fax: "092-738-0169"
 address:
  street: "中央区大名二丁目4-22 新日本ビル5階"
  state: "福岡県福岡市"

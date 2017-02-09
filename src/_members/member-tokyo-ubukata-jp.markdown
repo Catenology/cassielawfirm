@@ -11,11 +11,11 @@ lastname: "生方"
 firstname: "麻理"
 alias: "ubukata"
 title: "弁護士"
-association: "Daiichi Tokyo Bar Association"
+association: "東京第一弁護士会所属"
 language:
-  - Japanese
+  - 日本語
 image: "member-tokyo-ubukata"
-weight: 7 #this is for sorting order
+weight: 8 #this is for sorting order
 ---
 
 ### 経歴

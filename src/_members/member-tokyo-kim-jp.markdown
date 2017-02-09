@@ -11,15 +11,13 @@ lastname: "金"
 firstname: "佑樹"
 alias: "kim"
 title: "弁護士"
-association: "Tokyo Bar Association"
+association: "東京弁護士会所属"
 language:
-  - Japanese
+  - 日本語
 image: "member-tokyo-kim"
-weight: 8 #this is for sorting order
+weight: 9 #this is for sorting order
 ---
 
 ### 経歴
-- 私立広島学院高等学校 卒業
-- 東京大学経済学部 卒業
-- 中央大学法科大学院 修了
-- 福岡県弁護士会 所属
+- 东京大学经济学 学士
+- 中央大学法学院 硕士

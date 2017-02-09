@@ -6,8 +6,8 @@ nameshort: "BR 博多"
 alias: "hakata"
 weight: 5
 chief: "李武哲"
-tel: "092-409-8984"
-fax: "092-409-8985"
+tel: "+81-92-409-8984"
+fax: "+81-92-409-8985"
 address:
   street: "博多駅東1-9-5"
   state: "福岡市博多区"

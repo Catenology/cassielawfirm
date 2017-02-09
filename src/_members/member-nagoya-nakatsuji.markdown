@@ -10,12 +10,12 @@ office-name:
 lastname: "Nakatsuji"
 firstname: "Motoki"
 alias: "nakatsuji"
-title: "Associate Attorney"
+title: "Associate"
 association: "Aichi Bar Association"
 language:
   - Japanese
 image: "member-nagoya-nakatsuji"
-weight: 14 #this is for sorting order
+weight: 15 #this is for sorting order
 ---
 
 ### Work and Education

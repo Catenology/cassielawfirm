@@ -10,12 +10,12 @@ office-name:
 lastname: "Akenaga"
 firstname: "Yuta"
 alias: "akenaga"
-title: "Associate Attorney"
+title: "Associate"
 association: "Aichi Bar Association"
 language:
   - Japanese
 image: "member-nagoya-akenaga"
-weight: 12 #this is for sorting order
+weight: 13 #this is for sorting order
 ---
 
 

@@ -11,9 +11,9 @@ lastname: "桥本"
 firstname: "吉文"
 alias: "hashimoto"
 title: "总代表律师"
-association: "Tokyo BAR Association"
+association: "东京律师协会"
 language:
-  - Japanese
+  - 日本语
 image: "member-fukuoka-hashimoto"
 weight: 1 #this is for sorting order
 ---

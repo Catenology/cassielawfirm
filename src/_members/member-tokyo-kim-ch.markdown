@@ -11,11 +11,11 @@ lastname: "金"
 firstname: "佑树"
 alias: "kim"
 title: "律师"
-association: "Tokyo Bar Association"
+association: "东京律师协会"
 language:
-  - Japanese
+  - 日本语
 image: "member-tokyo-kim"
-weight: 8 #this is for sorting order
+weight: 9 #this is for sorting order
 ---
 
 ### 经历

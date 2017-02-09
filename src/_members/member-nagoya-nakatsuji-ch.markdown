@@ -11,11 +11,11 @@ lastname: "中辻"
 firstname: "元希"
 alias: "nakatsuji"
 title: "律师"
-association: "Aichi Bar Association"
+association: "爱知县律师协会"
 language:
-  - Japanese
+  - 日本语
 image: "member-nagoya-nakatsuji"
-weight: 14 #this is for sorting order
+weight: 15 #this is for sorting order
 ---
 
 ### 经历

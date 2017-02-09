@@ -6,8 +6,8 @@ nameshort: "BR Nagoya"
 alias: "nagoya"
 weight: 3
 chief: "Tomohiro Matsukawa"
-tel: "052-232-2505"
-fax: "052-232-2556"
+tel: "+81-52-232-2505"
+fax: "+81-52-232-2556"
 address:
   street: "Hibino Ofuisurainnzu Bldg. 3A, 2-2-5, Marunochi, Naka-ku"
   state: "Nagoya"

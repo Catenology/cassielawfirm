@@ -10,7 +10,7 @@ office-name:
 lastname: "Hashimoto"
 firstname: "Yoshifumi"
 alias: "hashimoto"
-title: "General Chief Representative Attorney"
+title: "General Chief Representative"
 association: "Tokyo Bar Association"
 language:
   - Japanese

@@ -11,11 +11,11 @@ lastname: "高桥"
 firstname: "史记"
 alias: "takahashi"
 title: "代表律师"
-association: "Daiichi Tokyo Bar Association"
+association: "东京第一律师协会"
 language:
-  - Japanese
+  - 日本语
 image: "member-tokyo-takahashi"
-weight: 6 #this is for sorting order
+weight: 7 #this is for sorting order
 ---
 
 ### 经历

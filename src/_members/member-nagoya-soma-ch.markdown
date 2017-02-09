@@ -11,11 +11,11 @@ lastname: "相馬"
 firstname: "信子"
 alias: "soma"
 title: "律师"
-association: "Aichi Bar Association"
+association: "爱知县律师协会"
 language:
-  - Japanese
+  - 日本语
 image: "member-nagoya-soma"
-weight: 13 #this is for sorting order
+weight: 14 #this is for sorting order
 ---
 
 ### 经历

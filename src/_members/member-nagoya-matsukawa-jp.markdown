@@ -11,11 +11,11 @@ lastname: "松川"
 firstname: "知弘"
 alias: "matsukawa"
 title: "代表弁護士"
-association: "Aichi Bar Association"
+association: "愛知県弁護士会所属"
 language:
-  - Japanese
+  - 日本語
 image: "member-nagoya-matsukawa"
-weight: 11 #this is for sorting order
+weight: 12 #this is for sorting order
 ---
 
 ### プロフィール

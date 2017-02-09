@@ -10,12 +10,12 @@ office-name:
 lastname: "Matsukawa"
 firstname: "Tomohiro"
 alias: "matsukawa"
-title: "Chief Representative Attorney"
+title: "Chief Representative"
 association: "Aichi Bar Association"
 language:
   - Japanese
 image: "member-nagoya-matsukawa"
-weight: 11 #this is for sorting order
+weight: 12 #this is for sorting order
 ---
 
 ### About

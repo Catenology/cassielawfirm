@@ -11,11 +11,11 @@ lastname: "神山"
 firstname: "優一"
 alias: "kouyama"
 title: "弁護士"
-association: "Tokyo Bar Association"
+association: "東京弁護士会所属"
 language:
-  - Japanese
+  - 日本語
 image: "member-tokyo-kouyama"
-weight: 9 #this is for sorting order
+weight: 10 #this is for sorting order
 ---
 
 ### 経歴

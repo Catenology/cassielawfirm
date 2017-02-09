@@ -10,10 +10,10 @@ office-name:
 lastname: "秋山"
 firstname: "理恵"
 alias: "akiyama"
-title: "律师"
-association: "Fukuoka Bar Association"
+title: "代表律师"
+association: "福冈律师协会"
 language:
-  - Japanese
+  - 日本语
 image: "member-fukuoka-akiyama"
 weight: 2 #this is for sorting order
 ---

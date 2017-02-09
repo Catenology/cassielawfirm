@@ -10,12 +10,12 @@ office-name:
 lastname: "Kim"
 firstname: "Yuuki"
 alias: "kim"
-title: "Associate Attorney"
+title: "Associate"
 association: "Tokyo Bar Association"
 language:
   - Japanese
 image: "member-tokyo-kim"
-weight: 8 #this is for sorting order
+weight: 9 #this is for sorting order
 ---
 
 ### Work and Education

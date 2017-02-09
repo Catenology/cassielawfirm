@@ -10,12 +10,12 @@ office-name:
 lastname: "姜"
 firstname: "成賢"
 alias: "kyou"
-title: "Associate Attorney"
-association: "Fokuoka Bar Association"
+title: "弁護士"
+association: "福岡弁護士会所属"
 language:
-  - Korean
-  - Japanese
-  - English
+  - 韓国語
+  - 日本語
+  - 英語
 image: "member-fukuoka-kyou"
 weight: 4 #this is for sorting order
 ---

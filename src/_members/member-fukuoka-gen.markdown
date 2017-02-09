@@ -10,7 +10,7 @@ office-name:
 lastname: "Yan"
 firstname: "Yiwen"
 alias: "gen"
-title: "Associate Attorney (Chinese)"
+title: "Associate (Chinese)"
 association: "Admitted in China"
 language:
  - Chinese

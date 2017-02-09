@@ -11,11 +11,10 @@ lastname: "严"
 firstname: "逸文"
 alias: "gen"
 title: "中国律师"
-association: "Admitted in China"
 language:
- - Chinese
- - Japanese
- - English
+ - 中文
+ - 日本语
+ - 英语
 image: "member-fukuoka-gen"
 weight: 3 #this is for sorting order
 ---

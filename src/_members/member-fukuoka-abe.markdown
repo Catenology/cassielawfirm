@@ -16,7 +16,7 @@ title: "CPA & CPTA(certified public tax accountant)"
 language:
   - Japanese
 image: "member-fukuoka-abe"
-weight: 5 #this is for sorting order
+weight: 6 #this is for sorting order
 ---
 
 ### About

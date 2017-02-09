@@ -11,11 +11,11 @@ lastname: "髙橋"
 firstname: "史記"
 alias: "takahashi"
 title: "代表弁護士"
-association: "Daiichi Tokyo Bar Association"
+association: "東京第一弁護士会所属"
 language:
-  - Japanese
+  - 日本語
 image: "member-tokyo-takahashi"
-weight: 6 #this is for sorting order
+weight: 7 #this is for sorting order
 ---
 
 ### 経歴

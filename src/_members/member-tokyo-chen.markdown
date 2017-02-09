@@ -15,7 +15,7 @@ language:
   - Chinese
   - Japanese
 image: "member-tokyo-chen"
-weight: 10 #this is for sorting order
+weight: 11 #this is for sorting order
 ---
 
 ### Work and Education

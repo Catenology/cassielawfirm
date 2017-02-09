@@ -6,8 +6,8 @@ nameshort: "BR 名古屋"
 alias: "nagoya"
 weight: 3
 chief: "松川 知弘"
-tel: "052-232-2505"
-fax: "052-232-2556"
+tel: "+81-52-232-2505"
+fax: "+81-52-232-2556"
 address:
   street: "中区丸内2-2-5 Hibino Ofuisurainnzu Bldg. 3A"
   state: "名古屋市"
