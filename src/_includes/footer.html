@@ -5,8 +5,16 @@
 <footer class="footer">
   <div class="container">
     <ul class="footer-link-list list-unstyled">
+      {% if page.url contains "-jp" %}
+      <li><a href="{{ site.baseurl | prepend: site.url }}/careers-jp/">採用情報</a></li>
+      <li><a href="{{ site.baseurl | prepend: site.url }}/privacy/">プライバシー規約</a></li>
+      {% elsif page.url contains "-ch" %}
+      <li><a href="{{ site.baseurl | prepend: site.url }}/careers-ch/">人才招聘</a></li>
+      <li><a href="{{ site.baseurl | prepend: site.url }}/privacy/">隐私声明</a></li>
+      {% else %}
       <li><a href="{{ site.baseurl | prepend: site.url }}/careers/">Career opportunities</a></li>
       <li><a href="{{ site.baseurl | prepend: site.url }}/privacy/">Privacy policy</a></li>
+      {% endif %}
     </ul>
     <p>
       Copyright (c) 2016 BridgeRoots All Rights Reserved.

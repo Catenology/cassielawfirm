@@ -2,6 +2,7 @@
 layout: page
 title: "Privacy Policy"
 permalink: /privacy/
+lang: en
 ---
 
 This Privacy Policy, (hereinafter referred to as "the Corporation, et al.") Lawyer corporation Bridge Roots bridge roots and attorneys corporation Bridge Roots bridge roots Nagoya, (hereinafter referred to as "users") all of the people that use this site the other hand, will tell the basic way of thinking about the protection of personal information of everyone.

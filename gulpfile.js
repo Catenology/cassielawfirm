@@ -15,6 +15,8 @@ const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const download = require('gulp-download');
+const browsersync = require('browser-sync').create();
+const reload = browsersync.reload;
 
 let deployargs = minimist(process.argv.slice(2));
 let conn = ftp.create({
@@ -28,19 +30,19 @@ let timestamp = Math.round(Date.now() / 1000);
 gulp.task('default', ['cachebust']);
 
 gulp.task('clean', () => {
-    return del(['dist','_site','src/_site','src/css/_vendor/**/catfw.*','src/css/fonts/**/catif.*','src/css/vendor.min.css','src/js/_vendor/**','src/js/vendor.min.js']);
+    return del(['src/_site','src/css/_vendor/**/catfw.*','src/css/fonts/**/catif.*','src/css/vendor.min.css','src/js/_vendor/**','src/js/vendor.min.js']);
 });
 
 gulp.task('zip', ['build'], () => {
-    let fszip = gulp.src('dist/_site/**')
+    let fszip = gulp.src('src/_site/**')
         .pipe(zip(`v${timestamp}.zip`))
-        .pipe(gulp.dest('dist/_site/files'));
+        .pipe(gulp.dest('src/_site/files'));
     return fszip;
 });
 
 gulp.task('build', ['scripts'], (cb) => {
     //jekyll build the site
-    exec(['jekyll b --source src --destination dist/_site'], function(err, stdout, stderr) {
+    exec(['jekyll b --source src --destination src/_site'], function(err, stdout, stderr) {
         console.log(stdout);
         console.log(stderr);
         cb(err);
@@ -49,15 +51,15 @@ gulp.task('build', ['scripts'], (cb) => {
 
 //add timestamp to static assets to bust cache
 gulp.task('cachebust', ['build'], () => {
-    let fscachebust = gulp.src(['dist/_site/**/*.html', 'dist/_site/**/*.md', 'dist/_site/**/*.markdown'])
+    let fscachebust = gulp.src(['src/_site/**/*.html', 'src/_site/**/*.md', 'src/_site/**/*.markdown'])
         .pipe(replace(/@@hash/g, timestamp))
-        .pipe(gulp.dest('dist/_site'))
+        .pipe(gulp.dest('src/_site'))
     return fscachebust;
 });
 
 //ftp deployment
 gulp.task('deploy', ['cleanremote'], () => {
-    let globs = ['dist/_site/**/*.*'];
+    let globs = ['src/_site/**/*.*'];
     let fsdeploy = gulp.src(globs, {
             buffer: false
         })
@@ -126,4 +128,15 @@ gulp.task('scripts', ['styles'], () => {
   .pipe(gulp.dest('src/js'));
 
   return merge(vendor, main);
+});
+
+//watch
+gulp.task('watch', ['cachebust'], () => {
+  browsersync.init({
+        server: {
+            baseDir: './src/_site/'
+        }
+    });
+  gulp.watch(['src/*.{md,html,yml,js,scss}'], ['cachebust']);
+  gulp.watch(['src/_site/**']).on('change', reload);
 });
