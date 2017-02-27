@@ -1,15 +1,21 @@
 <a href="{{ site.baseurl | prepend: site.url }}/#top" class="go-to-top">
   <i class="catif catif-chevron-up"></i>
+  {% if page.url contains "-lang-jp" %}
+  <span class="label">トップに戻る</span>
+  {% elsif page.url contains "-lang-ch" %}
+  <span class="label">回到顶部</span>
+  {% else %}
   <span class="label">Go to top</span>
+  {% endif %}
 </a>
 <footer class="footer">
   <div class="container">
     <ul class="footer-link-list list-unstyled">
-      {% if page.url contains "-jp" %}
-      <li><a href="{{ site.baseurl | prepend: site.url }}/careers-jp/">採用情報</a></li>
+      {% if page.url contains "-lang-jp" %}
+      <li><a href="{{ site.baseurl | prepend: site.url }}/careers-lang-jp/">採用情報</a></li>
       <li><a href="{{ site.baseurl | prepend: site.url }}/privacy/">プライバシー規約</a></li>
-      {% elsif page.url contains "-ch" %}
-      <li><a href="{{ site.baseurl | prepend: site.url }}/careers-ch/">人才招聘</a></li>
+      {% elsif page.url contains "-lang-ch" %}
+      <li><a href="{{ site.baseurl | prepend: site.url }}/careers-lang-ch/">人才招聘</a></li>
       <li><a href="{{ site.baseurl | prepend: site.url }}/privacy/">隐私声明</a></li>
       {% else %}
       <li><a href="{{ site.baseurl | prepend: site.url }}/careers/">Career opportunities</a></li>

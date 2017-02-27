@@ -8,27 +8,27 @@
       <!-- <input id="navbarHamburger" type="checkbox" class="navbar-hamburger-checkbox" /> -->
       <div class="navbar-hamburger-icon" data-target="navbarMenu"><i class="catif catif-hamburger icon"></i></div>
       <ul class="navbar-menu" id="navbarMenu">
-        {% if page.url contains "-ch" %}
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-ch.html#about">关于我们</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-ch.html#services">业务介绍</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-ch.html#team">团队介绍</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-ch.html#contact">联系我们</a></li>
+        {% if page.url contains "-lang-ch" %}
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#about">关于我们</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#services">业务介绍</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#team">团队介绍</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#contact">联系我们</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/#top">English</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/#top">日本語</a></li>
-        {% elsif page.url contains "-jp" %}
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-jp.html#about">弁護士法人ブリッジルーツについて</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-jp.html#services">業務案内</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-jp.html#team">弁護士・会計士のご紹介</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-jp.html#contact">お問い合わせ</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#top">日本語</a></li>
+        {% elsif page.url contains "-lang-jp" %}
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#about">弁護士法人ブリッジルーツについて</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#services">業務案内</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#team">弁護士・会計士のご紹介</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#contact">お問い合わせ</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/#top">English</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-ch.html#top">中文</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#top">中文</a></li>
         {% else %}
         <li><a href="{{ site.baseurl | prepend: site.url }}/#about">Who are we</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/#services">Services</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/#team">Team</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/#contact">Contact</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-ch.html#top">中文</a></li>
-        <li><a href="{{ site.baseurl | prepend: site.url }}/index-jp.html#top">日本語</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#top">中文</a></li>
+        <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#top">日本語</a></li>
         {% endif %}
 
       </ul>

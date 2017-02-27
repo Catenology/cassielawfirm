@@ -12,7 +12,7 @@ layout: default
       {% endif %}
       {% endfor %}
     </p>
-    {% if page.url contains "-ch" or page.url contains "-jp" %}
+    {% if page.url contains "-lang-ch" or page.url contains "-lang-jp" %}
     <h1>{{ page.lastname }} {{ page.firstname }}</h1>
     {% else %}
     <h1>{{ page.firstname | capitalize }} {{ page.lastname | capitalize }}</h1>
@@ -27,9 +27,9 @@ layout: default
         <img src="{{ site.baseurl | prepend: site.url }}/images/{{ page.image }}.jpg" class="img-responsive" alt="{{ page.firstname }} {{ page.lastname }}" />
       </div>
     </div>
-    {% if page.url contains "-ch" %}
+    {% if page.url contains "-lang-ch" %}
     {% assign members = site.members | where: "lang","ch" %}
-    {% elsif page.url contains "-jp" %}
+    {% elsif page.url contains "-lang-jp" %}
     {% assign members = site.members | where: "lang","jp" %}
     {% else %}
     {% assign members = site.members | where: "lang","en" %}
@@ -51,7 +51,7 @@ layout: default
         {% if relatedmember.alias != page.alias %}
         <figure data-office="{{ relatedmember.office }}" class="photowall-item">
           <a href="{{ site.baseurl | prepend: site.url }}/{{ relatedmember.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
-          {% if page.url contains "-ch" or page.url contains "-jp" %}
+          {% if page.url contains "-lang-ch" or page.url contains "-lang-jp" %}
           <figcaption>{{ relatedmember.lastname }} {{ relatedmember.firstname }}</figcaption>
           {% else %}
           <figcaption>{{ relatedmember.firstname }} {{ relatedmember.lastname }}</figcaption>

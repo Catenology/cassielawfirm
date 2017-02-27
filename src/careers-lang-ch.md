@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "加入我们"
-permalink: /careers-ch/
+permalink: /careers-lang-ch/
 lang: ch
 ---
 

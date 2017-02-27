@@ -137,6 +137,5 @@ gulp.task('watch', ['cachebust'], () => {
             baseDir: './src/_site/'
         }
     });
-  gulp.watch(['src/*.{md,html,yml,js,scss}'], ['cachebust']);
   gulp.watch(['src/_site/**']).on('change', reload);
 });

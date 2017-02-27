@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "採用情報"
-permalink: /careers-jp/
+permalink: /careers-lang-jp/
 lang: jp
 ---
 
