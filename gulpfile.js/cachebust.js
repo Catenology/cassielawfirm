@@ -1,3 +1,4 @@
+'use strict'
 const gulp = require('gulp');
 const timestamp = Math.round(Date.now() / 1000);
 const replace = require('gulp-replace');

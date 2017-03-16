@@ -1,3 +1,4 @@
+'use strict'
 const gulp = require('gulp');
 const download = require('gulp-download');
 const merge = require('merge-stream');
