@@ -2,7 +2,7 @@
 
 'use strict'
 let main = () => {
-
+//
     //read more toggle
     let toggleReadMore = (triggers, iconBefore, iconAfter ) => {
             triggers.on('click', (e) => {
