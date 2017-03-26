@@ -12,7 +12,7 @@ const conn = ftp.create({
 });
 
 gulp.task('deploy', ['cleanremote'], () => {
-    const globs = ['src/_site/**/*.*'];
+    const globs = ['./_site/**/*.*'];
     return gulp.src(globs, {
             buffer: false
         })
