@@ -1,3 +1,5 @@
-'use strict'
-const requireDir = require('require-dir')
+'use strict';
+
+const requireDir = require('require-dir');
+
 requireDir('.');
