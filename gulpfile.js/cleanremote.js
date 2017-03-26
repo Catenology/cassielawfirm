@@ -13,4 +13,8 @@ const conn = ftp.create({
   log: util.log,
 });
 
-gulp.task('cleanremote', () => conn.rmdir('cassielawfirm'));
+gulp.task('cleanremote', () => {
+  return conn.rmdir('cassielawfirm', function(err) {
+      cb();
+  });
+});
