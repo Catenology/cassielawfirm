@@ -9,5 +9,7 @@ gulp.task('watch', ['cachebust'], () => {
             baseDir: './_site/'
         }
     });
-  gulp.watch('src/**', ['build']);
+    gulp.watch('src/**/*.scss', ['styles']).on('change', reload);
+    gulp.watch('src/**/*.js', ['scripts']).on('change', reload);
+    gulp.watch('src/**/*.md', ['build']).on('change', reload);
 });
