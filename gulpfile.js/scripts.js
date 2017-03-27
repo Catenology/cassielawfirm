@@ -7,7 +7,7 @@ const babel = require('gulp-babel');
 const rename = require('gulp-rename');
 const merge = require('merge-stream');
 
-gulp.task('scripts', ['styles'], () => {
+gulp.task('scripts', () => {
   const vendor = gulp.src(['src/js/_vendor/*.js'])
   .pipe(uglify())
   .pipe(concat('vendor.min.js'))

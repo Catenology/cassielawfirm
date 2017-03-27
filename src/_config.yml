@@ -20,5 +20,6 @@ collections:
   offices:
       output: true
 emptyArray: []
+include: ['_pages']
 # Build settings
 markdown: kramdown

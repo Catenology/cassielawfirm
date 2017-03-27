@@ -182,6 +182,21 @@
   }
 }
 
-.services-primary {
-  
+.service-primary {
+  padding: $spacing-unit-lg 0;
+}
+
+.service-primary-item {
+  position: relative;
+  .caption {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: $spacing-unit;
+    background-color: fade-out(#000, .5);
+    color: #fff;
+    text-align: center;
+  }
 }

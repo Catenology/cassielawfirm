@@ -5,13 +5,14 @@ const browsersync = require('browser-sync').create();
 
 const reload = browsersync.reload;
 
-gulp.task('watch', ['cachebust'], () => {
+gulp.task('watch', ['build'], () => {
   browsersync.init({
     server: {
       baseDir: './_site/',
     },
   });
-  gulp.watch('src/**/*.scss', ['styles']).on('change', reload);
-  gulp.watch('src/**/*.js', ['scripts']).on('change', reload);
-  gulp.watch('src/**/*.md', ['build']).on('change', reload);
+  gulp.watch('src/_sass/*.scss', ['styles', 'build']);
+  gulp.watch('src/js/*.js', ['scripts']);
+  gulp.watch('src/**/*.{html, markdown, md}', ['build']);
+  gulp.watch('_site/**').on('change', reload);
 });
