@@ -51,10 +51,10 @@ layout: default
         {% if relatedmember.alias != page.alias %}
         <figure data-office="{{ relatedmember.office }}" class="photowall-item">
           {% if page.url contains "-jp.html" %}
-          <a href="{{ site.baseurl | prepend: site.url }}/{{ relatedmember.url }}-jp"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
+          <a href="{{ site.baseurl | prepend: site.url }}/members/member-{{ relatedmember.office }}-{{ relatedmember.alias }}-jp.html"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
           <figcaption>{{ relatedmember.lastname }} {{ relatedmember.firstname }}</figcaption>
           {% elsif page.url contains "-ch.html" %}
-          <a href="{{ site.baseurl | prepend: site.url }}/{{ relatedmember.url }}-ch"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
+          <a href="{{ site.baseurl | prepend: site.url }}/members/member-{{ relatedmember.office }}-{{ relatedmember.alias }}-ch.html"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
           <figcaption>{{ relatedmember.lastname }} {{ relatedmember.firstname }}</figcaption>
           {% else %}
           <a href="{{ site.baseurl | prepend: site.url }}/{{ relatedmember.url }}"><img src="{{ site.baseurl | prepend: site.url }}/images/{{ relatedmember.image }}-sm.jpg" alt="{{ relatedmember.firstname }} {{ relatedmember.lastname }}" class="img-responsive" /></a>
