@@ -15,11 +15,12 @@ association: "福岡弁護士会所属"
 language:
   - 日本語
 image: "member-fukuoka-iwaya"
-weight: 5 #this is for sorting order
+weight: 6 #this is for sorting order
 ---
 
 
-### Work and Education
-- Sapporo Higashi High School
-- Sophia University (LL.B.,)
-- Shinshu University (LL.M.,)
+### 経歴
+
+- 札幌東高校　卒業
+- 北海道大学法学部　卒業
+- 北海道大学法学府　卒業

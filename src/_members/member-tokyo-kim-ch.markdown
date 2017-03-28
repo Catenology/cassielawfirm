@@ -15,7 +15,7 @@ association: "东京律师协会"
 language:
   - 日本语
 image: "member-tokyo-kim"
-weight: 9 #this is for sorting order
+weight: 10 #this is for sorting order
 ---
 
 ### 经历

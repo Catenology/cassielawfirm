@@ -15,7 +15,7 @@ association: "爱知县律师协会"
 language:
   - 日本语
 image: "member-nagoya-akenaga"
-weight: 13 #this is for sorting order
+weight: 14 #this is for sorting order
 ---
 
 ### 经历

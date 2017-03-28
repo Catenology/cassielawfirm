@@ -15,7 +15,7 @@ language:
   - 中文
   - 日本语
 image: "member-tokyo-chen"
-weight: 11 #this is for sorting order
+weight: 12 #this is for sorting order
 ---
 
 ### 经历

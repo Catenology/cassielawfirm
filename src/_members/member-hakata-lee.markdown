@@ -16,7 +16,7 @@ language:
   - Korean
   - Japanese
 image: "member-hakata-lee"
-weight: 17 #this is for sorting order
+weight: 18 #this is for sorting order
 ---
 
 ### Work and Education

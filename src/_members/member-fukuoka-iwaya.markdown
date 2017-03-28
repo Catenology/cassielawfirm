@@ -15,7 +15,7 @@ association: "Fukuoka Bar Association"
 language:
   - Japanese
 image: "member-fukuoka-iwaya"
-weight: 5 #this is for sorting order
+weight: 6 #this is for sorting order
 ---
 
 

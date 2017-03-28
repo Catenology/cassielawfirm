@@ -16,7 +16,7 @@ language:
   - 韩国语
   - 日本语
 image: "member-hakata-lee"
-weight: 17 #this is for sorting order
+weight: 18 #this is for sorting order
 ---
 
 ### 经历

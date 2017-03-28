@@ -15,7 +15,7 @@ association: "Aichi Bar Association"
 language:
   - Japanese
 image: "member-nagoya-nakatsuji"
-weight: 15 #this is for sorting order
+weight: 16 #this is for sorting order
 ---
 
 ### Work and Education

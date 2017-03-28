@@ -16,7 +16,7 @@ language:
   - 韓国語
   - 日本語
 image: "member-hakata-lee"
-weight: 17 #this is for sorting order
+weight: 18 #this is for sorting order
 ---
 
 ### 経歴

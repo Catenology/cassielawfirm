@@ -15,7 +15,7 @@ association: "愛知県弁護士会所属"
 language:
   - 日本語
 image: "member-nagoya-matsukawa"
-weight: 12 #this is for sorting order
+weight: 13 #this is for sorting order
 ---
 
 ### プロフィール
@@ -31,8 +31,8 @@ weight: 12 #this is for sorting order
 - 愛知県弁護士会 所属
 - 伊藤倫文法律事務所勤務を経て、 2008年04月 弁護士法人Bridge Rootsブリッジルーツ名古屋事務所
 <br />（現 弁護士法人BridgeRootsブリッジルーツ名古屋）開設
-- 2009年04月 名城大学非常勤講師（不法行為法、離婚法、相続法）就任
-- 2012年06月 santec株式会社監査役 就任
+- 2009年4月 名城大学非常勤講師（不法行為法、離婚法、相続法）就任
+- 2012年6月 santec株式会社監査役 就任
 
 ### 講演・セミナー
 朝日新聞社、積水ハウス株式会社、ジブラルタ生命保険株式会社等多数。

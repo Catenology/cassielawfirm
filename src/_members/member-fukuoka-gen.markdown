@@ -17,7 +17,7 @@ language:
  - Japanese
  - English
 image: "member-fukuoka-gen"
-weight: 3 #this is for sorting order
+weight: 4 #this is for sorting order
 ---
 
 ### Work and Education

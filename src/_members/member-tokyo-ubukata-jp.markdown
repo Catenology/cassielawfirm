@@ -15,7 +15,7 @@ association: "東京第一弁護士会所属"
 language:
   - 日本語
 image: "member-tokyo-ubukata"
-weight: 8 #this is for sorting order
+weight: 9 #this is for sorting order
 ---
 
 ### 経歴

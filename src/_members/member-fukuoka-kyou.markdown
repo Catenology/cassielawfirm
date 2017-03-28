@@ -17,7 +17,7 @@ language:
   - Japanese
   - English
 image: "member-fukuoka-kyou"
-weight: 4 #this is for sorting order
+weight: 5 #this is for sorting order
 ---
 
 

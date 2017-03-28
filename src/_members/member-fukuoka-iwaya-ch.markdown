@@ -15,7 +15,7 @@ association: "福冈律师协会"
 language:
   - 日本语
 image: "member-fukuoka-iwaya"
-weight: 5 #this is for sorting order
+weight: 6 #this is for sorting order
 ---
 
 

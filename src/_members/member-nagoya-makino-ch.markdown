@@ -15,7 +15,7 @@ association: "爱知县律师协会"
 language:
   - 日本语
 image: "member-nagoya-makino"
-weight: 16 #this is for sorting order
+weight: 17 #this is for sorting order
 ---
 
 

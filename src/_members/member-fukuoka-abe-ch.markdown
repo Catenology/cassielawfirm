@@ -16,7 +16,7 @@ title: "公认会计师 税理士"
 language:
   - 日本语
 image: "member-fukuoka-abe"
-weight: 6 #this is for sorting order
+weight: 7 #this is for sorting order
 ---
 
 ### 经历

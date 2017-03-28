@@ -15,7 +15,7 @@ association: "爱知县律师协会"
 language:
   - 日本语
 image: "member-nagoya-nakatsuji"
-weight: 15 #this is for sorting order
+weight: 16 #this is for sorting order
 ---
 
 ### 经历

@@ -39,7 +39,7 @@ Currently, BR have associated offices located in Tokyo, Fukuoka, Shanghai office
 ### Publications
 - "Guide of modern type problem employees Measures" - Publisher: civil law Study Group - *co-author*
 - "The responsibility of the user to see the precedent" - Publisher: New Japan laws and regulations - *co-author*
-- "China resident lawyer Memoirs" Serialized publication (04/2005 ~ 02/2006) - Publisher: Association for the Promotion of International Trading Whitepaper
+- "China resident lawyer Memoirs" Serialized publication (4/2005 ~ 2/2006) - Publisher: Association for the Promotion of International Trading Whitepaper
 
 ### Seminars
 - JETRO

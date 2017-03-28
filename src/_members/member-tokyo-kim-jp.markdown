@@ -15,7 +15,7 @@ association: "東京弁護士会所属"
 language:
   - 日本語
 image: "member-tokyo-kim"
-weight: 9 #this is for sorting order
+weight: 10 #this is for sorting order
 ---
 
 ### 経歴

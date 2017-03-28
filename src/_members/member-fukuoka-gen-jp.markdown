@@ -16,7 +16,7 @@ language:
  - 日本語
  - 英語
 image: "member-fukuoka-gen"
-weight: 3 #this is for sorting order
+weight: 4 #this is for sorting order
 ---
 
 ### 経歴

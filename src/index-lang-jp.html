@@ -8,8 +8,16 @@ layout: default
         <div class="container about-text">
           <h1>弁護士法人ブリッジルーツについて</h1>
             <p>弁護士法人ブリッジルーツでは、２００７年より、上海に法律オフィスを設置するとともに、中国・韓国現地の法律事務所との提携により、迅速且つ的確な法的コンサルタント業務を実施しています。日本企業の中国・韓国進出のみならず、中国・韓国企業の日本進出についての法的サポートも取り扱っています。</p>
-            <!-- <span class="about-read-more center-block" data-target="about_more"><label class="about-read-more-label" data-expand="もっと詳しくは" data-collapse='隠す'>もっと詳しくは</label> <i class="catif catif-chevron-down about-read-more-icon"></i></span>
-            <p class="about-more" id="about_more">BridgeRootsは、実際にはチームビルディングと才能、と実践の年の文化に創業添付非常に重要なので、弁護士の真剣な態度、優れた専門的なスキル、協力と協調的かつ効率的なチームを和らげます。それは他の方法を確保するために、マルチ懲戒法律サービス、人事および内部調整メカニズムの効率的な展開を来るときBridgeRoots各弁護士は、一般的に集中し、1つまたは2つの事業分野での専門知識、および日本語、中国語、韓国語、英語、に堪能強力なサポートを提供し、クライアントの利益を確保するために緊密に協力する準備ができて弁護士の事業領域。</p> -->
+            <span class="about-read-more center-block" data-target="about_more"><label class="about-read-more-label" data-expand="続きを読む" data-collapse='隠す'>もっと詳しくは</label> <i class="catif catif-chevron-down about-read-more-icon"></i></span>
+            <div class="about-more" id="about_more">
+              <h5>法人のお客様</h5>
+              <p><strong>法務＋会計のワンストップサービス</strong><br>ブリッジルーツは、企業法務に対応する弁護士とともに公認会計士もメンバーに加わり、法務・会計が密接に連携したワンストップサービスを提供しています。法務＋会計の密接な連携が、ブリッジルーツの大きな強みとなっているのです。</p>
+              <p><strong>各分野の専門家との連携で生み出されるリーガルサービス</strong><br>ブリッジルーツは、税務分野（税理士）、知的財産法分野（弁理士）、人事労務分野（社会保険労務士）、会社法・不動産法分野（司法書士）、許認可分野（行政書士）等の各分野の専門家事務所と提携し、様々な局面で幅広い観点から案件に対応しています。</p>
+              <h5>個人のお客様</h5>
+              <p><strong>お客様の大切なものを守りたい</strong><br>ブリッジルーツは、その場しのぎの対応ではなく、お客様それぞれのご事情をしっかりとお聞かせいただいた上で、トータルな視点からご相談いただきました案件に関する最良の選択肢をご提供させていただきたいと考えています。お客様にとって大切なものとは――、ブリッジルーツの原点はここにあるのです。</p>
+              <h5>渉外法務－中国・韓国関係業務</h5>
+              <p><strong>日中韓を結ぶブリッジルーツ・ネットワーク</strong><br>ブリッジルーツは、2007年より、上海に法律オフィスを設置するとともに、中国・韓国現地の法律事務所との提携により、迅速かつ的確な法的コンサルタント業務の実施に注力しています。日本企業の中国・韓国進出のみならず、中国・韓国企業の日本進出についての法的サポートも行なっています。日本語はもちろん、中国語、韓国語、英語による対応が可能です。</p>
+            </div>
             <div class="about-offices">
                 {% assign offices = site.offices | where:"lang","jp" | sort:"weight" %}
                 {% for office in offices %}
@@ -145,7 +153,7 @@ layout: default
                         <div class="row">
                             <div class="twelve columns input-wrapper">
                                 <input id="txtCompany" name="Company" type="text" placeholder=" " />
-                                <label for="txtCompany">会社</label>
+                                <label for="txtCompany">会社名</label>
                             </div>
                         </div>
                     </div>

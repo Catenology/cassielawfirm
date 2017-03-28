@@ -16,7 +16,7 @@ title: "公認会計士・税理士"
 language:
   - 日本語
 image: "member-fukuoka-abe"
-weight: 6 #this is for sorting order
+weight: 7 #this is for sorting order
 ---
 
 ### プロフィール

@@ -15,7 +15,7 @@ association: "爱知县律师协会"
 language:
   - 日本语
 image: "member-nagoya-soma"
-weight: 14 #this is for sorting order
+weight: 15 #this is for sorting order
 ---
 
 ### 经历

@@ -15,7 +15,7 @@ association: "Aichi Bar Association"
 language:
   - Japanese
 image: "member-nagoya-soma"
-weight: 14 #this is for sorting order
+weight: 15 #this is for sorting order
 ---
 
 ### Work and Education

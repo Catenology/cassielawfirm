@@ -17,7 +17,7 @@ language:
   - 日本语
   - 英语
 image: "member-fukuoka-kyou"
-weight: 4 #this is for sorting order
+weight: 5 #this is for sorting order
 ---
 
 ### 经历

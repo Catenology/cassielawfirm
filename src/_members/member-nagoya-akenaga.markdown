@@ -15,7 +15,7 @@ association: "Aichi Bar Association"
 language:
   - Japanese
 image: "member-nagoya-akenaga"
-weight: 13 #this is for sorting order
+weight: 14 #this is for sorting order
 ---
 
 

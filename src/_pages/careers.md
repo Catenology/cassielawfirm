@@ -50,7 +50,7 @@ Location: BridgeRoots Nagoya
 **Fukuoka Office**
 
 Sinnihon Bldg. 5F, 2-4-22, Daimyo, Chuo-ku, Fukuoka 810-0041 Japan\\
-Tel: 092-738-2505　/　Fax: 092-738-0169
+Tel: 092-738-2505　/　Fax: 092-738-0167
 
 **BridgeRoots Nagoya**
 
