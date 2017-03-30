@@ -5,8 +5,6 @@ name: "上海オフィス"
 nameshort: "上海"
 alias: "shanghai"
 weight: 4
-tel: "021-52406930"
-fax: "021-52406950"
 address:
   street: "上海市長寧区宣化路28号 国際企業会館605室"
   state: "上海市"

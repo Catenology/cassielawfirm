@@ -1,7 +1,7 @@
 ---
 layout: office
 lang: ch
-name: "BridgeRoots博多"
+name: "BridgeRoots博多律师事务所"
 nameshort: "BR 博多"
 alias: "hakata"
 weight: 5
@@ -9,9 +9,9 @@ chief: "李武哲"
 tel: "+81-92-409-8984"
 fax: "+81-92-409-8985"
 address:
-  street: "博多駅東1-9-5"
+  street: "博多站东1丁目9-5 4c's博多 2F"
   state: "福岡市博多区"
-  zipcode: "812-0013"
+  zipcode: "〒812-0013"
   country: "日本"
 hours: "9:00 ~ 18:00 (工作日)"
 ---

@@ -9,9 +9,9 @@ chief: "Takenori Lee"
 tel: "+81-92-409-8984"
 fax: "+81-92-409-8985"
 address:
-  street: "Fuo-si-zu Hakata Bldg. 2F, 1-9-5, Hakataeki Higashi, Hakata-ku"
+  street: "4c's Hakata Bldg. 2F, 1-9-5, Hakataeki Higashi, Hakata-ku"
   state: "Hakata"
-  zipcode: "812-0013"
+  zipcode: "〒812-0013"
   country: "Japan"
 hours: "9:00 ~ 18:00 (weekdays)"
 ---

@@ -58,6 +58,8 @@
   text-align: center;
   display: inline-block;
   width: 100%;
+  min-height: 4.5em;
+  overflow: hidden;
   //reset font-size
   font-size: initial;
   @media screen and (min-width: $breakpoint-md) {

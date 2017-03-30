@@ -5,8 +5,6 @@ name: "上海"
 nameshort: "上海"
 alias: "shanghai"
 weight: 4
-tel: "+86-21-52406930"
-fax: "+86-21-52406950"
 address:
   street: "长宁区宣化路28号 国际企业会馆605室 "
   state: "上海市"

@@ -9,9 +9,9 @@ chief: "高桥 史记"
 tel: "+81-3-5368-1233"
 fax: "+81-3-5368-1255"
 address:
-  street: "新宿区新宿1丁目10-5 岡田BLdg. 5F"
+  street: "新宿区新宿1丁目10-5 岡田Bldg. 5F"
   state: "东京都"
-  zipcode: "160-0022"
+  zipcode: "〒160-0022"
   country: "日本"
 hours: "9:00 ~ 18:00 (工作日)"
 ---

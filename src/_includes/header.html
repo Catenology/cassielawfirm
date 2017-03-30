@@ -8,14 +8,14 @@
       <!-- <input id="navbarHamburger" type="checkbox" class="navbar-hamburger-checkbox" /> -->
       <div class="navbar-hamburger-icon" data-target="navbarMenu"><i class="catif catif-hamburger icon"></i></div>
       <ul class="navbar-menu" id="navbarMenu">
-        {% if page.url contains "-lang-ch" %}
+        {% if page.url contains "-ch.html" %}
         <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#about">关于我们</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#services">业务介绍</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#team">团队介绍</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-ch.html#contact">联系我们</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/#top">English</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#top">日本語</a></li>
-        {% elsif page.url contains "-lang-jp" %}
+        {% elsif page.url contains "-jp.html" %}
         <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#about">事務所紹介</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#services">業務案内</a></li>
         <li><a href="{{ site.baseurl | prepend: site.url }}/index-lang-jp.html#team">弁護士・会計士のご紹介</a></li>

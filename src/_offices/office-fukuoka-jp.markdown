@@ -1,7 +1,7 @@
 ---
 layout: office
 lang: jp
-name: "弁護士法人Bridge Rootsブリッジルーツ"
+name: "福岡オフィス"
 nameshort: "福岡"
 alias: "fukuoka"
 weight: 1

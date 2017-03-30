@@ -1,7 +1,7 @@
 ---
 layout: office
 lang: ch
-name: "福冈"
+name: "福冈Office"
 nameshort: "福冈"
 alias: "fukuoka"
 weight: 1

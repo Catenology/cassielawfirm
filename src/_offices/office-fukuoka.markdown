@@ -1,17 +1,17 @@
 ---
 layout: office
 lang: en
-name: "Fukuoka"
+name: "Fukuoka Office"
 nameshort: "Fukuoka"
 alias: "fukuoka"
 weight: 1
 chief: "Rie Akiyama"
-tel: "+81-92-738-0167"
+tel: "+81-92-738-2505"
 fax: "+81-92-738-0169"
 address:
  street: "Sinnihon Bldg. 5F, 2-4-22, Daimyo, Chuo-ku"
  state: "Fukuoka"
- zipcode: "810-0041"
+ zipcode: "〒810-0073"
  country: "Japan"
 hours: "9:00 ~ 18:00 (weekdays)"
 ---
