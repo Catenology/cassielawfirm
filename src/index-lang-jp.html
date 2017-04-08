@@ -62,9 +62,14 @@ layout: default
                   <div class="service-item-description" id="service_item_{{ service.alias }}_{{ item.alias }}">
                     <div class="service-close pull-right" title="Close detail" data-target="service_item_{{ service.alias }}_{{ item.alias }}"><i class="catif catif-navigate-close"></i></div>
                     <h3>{{ item.name }}</h3>
-                    <p>
-                      {{ item.description }}
-                    </p>
+                    {% if item.description %}
+                    <p>{{ item.description }}</p>
+                    {% endif %}
+                    <ul>
+                      {% for bullet in item.bullets %}
+                        <li>{{ bullet }}</li>
+                      {% endfor %}
+                    </ul>
                   </div>
                         <div class="service-item empty">
                         </div>
@@ -90,6 +95,15 @@ layout: default
               </a>
             </div>
           </div>
+    </section>
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="six columns offset-by-three">
+            <a href="http://bridgeroots.blog.jp/" class="center-block btn btn-ghost">ブリッジルーツの日本・中国・韓国見聞録</a>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="team" id="team">
         <div class="container">

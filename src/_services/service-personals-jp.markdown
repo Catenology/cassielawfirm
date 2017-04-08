@@ -6,31 +6,61 @@ alias: "psnl"
 weight: 3
 icon: "fa fa-user"
 items:
+  - name: "交通事故"
+    alias: "traffic"
+    bullets:
+      - 自賠責保険に対する被害者請求
+      - 示談交渉
+      - 損害賠償請求訴訟、調停、ADR
+      - 刑事事件の際の被害者支援
+  - name: "借金問題"
+    alias: "debt"
+    bullets:
+      - 債務整理
+      - 過払金返還請求
+      - 個人再生
+      - 自己破産
   - name: "労働問題"
     alias: "labor"
-    description: "不当解雇、残業代・給与未払い、その他労務問題全般など"
-  - name: "土地･建物の問題"
-    alias: "realty"
-    description: "各種不動産問題"
+    bullets:
+      - 未払賃金・未払残業代請求
+      - 不当解雇、労働者の地位保全
+      - パワハラ・セクハラ対応、就業規則の不利益変更
+      - 職務発明にかかる相当の対価の請求
+  - name: "外国人案件"
+    alias: "foreigner"
+    bullets:
+      - 中国語対応、韓国語対応
+      - 在留資格・入管法関連業務
+      - 在留資格等に関する訴訟・仮処分
+      - 入国管理局その他の行政対応
   - name: "離婚"
-    alias: "divorce"
-    description: "交渉、調停、訴訟全般"
-  - name: "遺言･親族相続に関する問題"
-    alias: "inheritance"
-    description: "遺言書の作成、遺産分割、その他親族相続に関する問題全般"
-  - name: "事故(交通･医療･学校)"
-    alias: "accident"
-    description: "加害者、被害者双方の代理人"
-  - name: "債務整理"
-    alias: "debt"
-    description: "過払い請求、個人再生、個人破産等"
-  - name: "財産管理"
+    alias: "marriage"
+    bullets:
+      - 離婚原因調査
+      - 調停・訴訟
+      - 親権獲得、面接交渉、子の引渡し
+      - 養育費請求、婚姻費用請求、慰謝料調査、財産分与調査
+      - ドメスティック・バイオレンス
+  - name: "相続・遺言"
+    alias: "will"
+    bullets:
+      - 相続関係調査
+      - 遺言書の作成・執行
+      - 遺産分割
+      - 成年後見人・保佐人・補助人の選任
+      - 高齢者財産管理等
+  - name: "不動産取引"
     alias: "property"
-    description: "成年後見制度に関わる問題全般"
-  - name: "消費者問題"
+    bullets:
+      - 不動産売買
+      - 住宅問題、建築紛争
+      - 借地借家等の不動産に関する紛争（敷金返還、原状回復義務、立退き、賃料不払い等）
+  - name: "その他一般民事事件"
     alias: "consumer"
-    description: "消費者に関わる問題全般"
-  - name: "刑事事件"
-    alias: "criminal"
-    description: "被疑者弁護、被告人弁護等刑事事件に関わる問題全般"
+    bullets:
+      - 民事訴訟、仮処分、民事調停、その他紛争全般
+      - 近隣問題、住民被害等
+      - 公害、薬害、災害法務
+      - 民事介入暴力対策
 ---

@@ -34,3 +34,12 @@ footer {
     }
   }
 }
+
+.partner-links {
+  a {
+    @include transition(opacity, ease, .3s);
+    &:hover, &:focus {
+      opacity: .8;
+    }
+  }
+}
