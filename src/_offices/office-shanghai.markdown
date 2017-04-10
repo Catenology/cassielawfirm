@@ -5,8 +5,10 @@ name: "Shanghai"
 nameshort: "Shanghai"
 alias: "shanghai"
 weight: 4
+tel: "+86-21-52406930"
+fax: "+86-21-52406950"
 address:
-  street: "Room 605, International Business BLdg, Xuanhua Road, Changning District"
+  street: "4F, No.1 BLdg, Yuyuan Road, Changning District"
   state: "Shanghai"
   zipcode: "200050"
   country: "China"
