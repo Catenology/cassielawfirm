@@ -19,14 +19,12 @@ weight: 1 #this is for sorting order
 ---
 
 ### About
-In order to improve the continuous development and the international status of the Asian region, including Russia and India, Hashimoto believes that Japan, China and South Korea should step over the history to build up a more intimate relationship with each other in the fields of politics, economics and culture.
+Bridge Roots is established by Mr. Hashimoto Yoshifumi, a veteran lawyer with profound legal theory and long years of practical experience.
 
-During his career in Shanghai, Hashimoto had a wide communication with and built a deep connection with businessmen, legal experts such as university professors, consulates and organizations in Shanghai and from Japan or Korea, what have made a great contribution to his future career. In 2007, he founded Bridge Roots in his hometown Fukuoka with the dream of bridging Asian countries as Japan, China and Korea.
-As a comprehensive international law firm, BR provides both domestic and cross-border services in the areas of General Corporate (including personnel and labor issues, such as work rules, salary rules, etc. ), M&A, corporate reorganization, etc., We also provide various legal cross-border support for, Japan corporation to entering into China and South Korea, for Japan corporations who do business in China and South Korea to solve legal solutions, the foreign corporations from China or South Korea to enter into Japan market formally at preparatory phase and after the entering.
+After graduated from the Law School of Waseda University, Mr. Hashimoto joined Takai Nobuo Law Firm and became the chief representative lawyer of its Shanghai Office in 2004. During his career in Shanghai, Mr. Hashimoto had a wide communication with and built a deep connection with businessmen, legal experts such as university professors, consulates and organizations in Shanghai and from Japan or Korea, what have made a great contribution to his future career.
+In 2007, Mr.Hashimoto founded Bridge Roots in his hometown Fukuoka with the dream of bridging Asian countries as Japan, China and Korea.
 
-In addition, BR also have certified accountant and tax accountant in order to offer a one-stop service for our clients.
-
-Currently, BR have associated offices located in Tokyo, Fukuoka, Shanghai office, BR group in Nagoya, BR group in Hakata, and corporate law firm in South Korea. This allows BR to cover mandates that extend to Japan, China and South Korea and to deliver international legal services tailored to fit the geographical needs of the clients.
+In order to improve the continuous development and the international status of the Asian region, Mr. Hashimoto believes that Japan, China and South Korea should step over the history to build up a more intimate relationship with each other in the fields of politics, economics and culture.
 
 ### Work and Education
 - Founder of BridgeRoots Legal Professional Corporation since May 2007

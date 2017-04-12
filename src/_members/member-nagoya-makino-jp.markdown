@@ -6,7 +6,7 @@ lang: jp
 office:
   - "nagoya"
 office-name:
-  - "BridgeRoots Nagoya"
+  - "弁護士法人ブリッジルーツ名古屋"
 lastname: "牧野"
 firstname: "太郎"
 alias: "makino"

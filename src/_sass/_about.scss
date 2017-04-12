@@ -2,12 +2,12 @@
 .about {
   width: 100%;
   margin: 0 auto;
-  .carousel-fw {
+  .carousel {
     display: none;
   }
   @media screen and (min-width: $breakpoint-md) {
     height: $hero-height-md;
-    .carousel-fw {
+    .carousel {
       display:block;
     }
   }
@@ -105,5 +105,8 @@
   &.active {
     max-height: none;
     opacity: 1;
+  }
+  p, h5 {
+    margin-bottom: .5rem;
   }
 }
