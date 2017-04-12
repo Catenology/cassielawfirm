@@ -2,7 +2,7 @@
 layout: office
 lang: jp
 name: "東京オフィス"
-nameshort: "东京"
+nameshort: "東京"
 alias: "tokyo"
 weight: 2
 chief: "高桥 史记"
