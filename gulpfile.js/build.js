@@ -1,12 +1,6 @@
-'use strict';
-
 const gulp = require('gulp');
-const exec = require('child_process').exec;
+const { exec } = require('child_process');
 
-gulp.task('build', ['scripts', 'styles'], (cb) => {
-  exec(['jekyll b --source src --destination _site'], (err, stdout, stderr) => {
-    console.log(stdout);
-    console.log(stderr);
-    cb(err);
-  });
+gulp.task('build', ['scripts', 'styles'], () => {
+  exec('jekyll b --source src --destination dist');
 });

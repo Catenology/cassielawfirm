@@ -1,5 +1,3 @@
-'use strict';
-
 const gulp = require('gulp');
 const util = require('gulp-util');
 const minimist = require('minimist');
@@ -13,8 +11,4 @@ const conn = ftp.create({
   log: util.log,
 });
 
-gulp.task('cleanremote', (cb) => {
-  return conn.rmdir('cassielawfirm', function(err) {
-      cb();
-  });
-});
+gulp.task('cleanremote', () => conn.rmdir('cassielawfirm'));

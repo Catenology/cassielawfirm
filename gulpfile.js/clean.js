@@ -1,6 +1,4 @@
-'use strict';
-
 const gulp = require('gulp');
 const del = require('del');
 
-gulp.task('clean', () => del(['./_site']));
+gulp.task('clean', () => del.sync(['dist/**']));
